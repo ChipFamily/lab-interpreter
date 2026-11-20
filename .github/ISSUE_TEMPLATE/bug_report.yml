@@ -1,0 +1,38 @@
+name: 🐞 Баг / некорректный результат
+description: Ошибка в работе, неверный диапазон, единица или расчёт
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за отчёт! **Не прикладывайте реальные результаты анализов** —
+        используйте синтетические значения.
+  - type: textarea
+    id: what
+    attributes:
+      label: Что произошло
+      description: Что пошло не так и чего вы ожидали.
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Вход (синтетический)
+      description: Строки бланка или команда запуска. Без реальных данных пациента.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Фактический вывод
+      render: text
+  - type: input
+    id: source
+    attributes:
+      label: Источник правильного значения
+      description: Для неверного диапазона/формулы — ссылка на гайдлайн или руководство лаборатории.
+  - type: input
+    id: version
+    attributes:
+      label: Версия / коммит

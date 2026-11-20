@@ -1,0 +1,12 @@
+# Приватные данные пациентов — НИКОГДА не коммитить
+history/*.jsonl
+references/user_overrides.json
+learned/*.log
+
+# артефакты
+__pycache__/
+*.pyc
+*.bak
+*.zip
+.DS_Store
+/tmp/

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Сообщить об уязвимости / утечке данных
+    url: https://github.com/ChipFamily/lab-interpreter/security/advisories/new
+    about: Приватно, через GitHub Security Advisories. Не прикладывайте реальные данные пациентов.
+  - name: 📖 Медицинская оговорка
+    url: https://github.com/ChipFamily/lab-interpreter#️-медицинский-дисклеймер
+    about: Это инструмент поддержки, не замена врача и не медицинское изделие.

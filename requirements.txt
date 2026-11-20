@@ -1,0 +1,9 @@
+# Ядро (interpret.py) зависимостей НЕ требует — чистый stdlib Python 3.9+.
+# Ниже — только для OCR-ингеста сканов (ingest/ocr_ingest.py):
+pdf2image>=1.16        # PDF → изображения (нужен системный poppler)
+pytesseract>=0.3.10    # обёртка Tesseract (нужен системный tesseract + язык pol/rus/eng)
+Pillow>=9.0            # обработка изображений
+
+# Необязательные движки OCR повышенного качества (автоподхват, если установлены):
+# easyocr>=1.7
+# paddleocr>=2.7

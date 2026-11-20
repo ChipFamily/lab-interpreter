@@ -1,0 +1,25 @@
+name: ✨ Показатель или возможность
+description: Добавить аналит/панель/формулу или улучшить функциональность
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что предлагаете
+    validations:
+      required: true
+  - type: textarea
+    id: analyte
+    attributes:
+      label: Для нового показателя — данные
+      description: |
+        Синонимы (RU/EN/PL), canonical-единица, множители конверсии, диапазоны
+        (по полу/возрасту), критические пороги.
+      render: text
+  - type: input
+    id: source
+    attributes:
+      label: Источник диапазонов/логики
+      description: Гайдлайн, руководство лаборатории и т.п. Диапазоны «на глаз» не принимаются.
+    validations:
+      required: true

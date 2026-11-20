@@ -1,0 +1,6935 @@
+{
+  "_meta": {
+    "note": "Канонические референсные интервалы взрослых. Всегда приоритет у диапазона из самого бланка пациента, если он указан — эти значения только fallback. Единицы приведены к canonical_unit; units_accepted содержит множители приведения входной единицы к canonical.",
+    "disclaimer": "Диапазоны зависят от лаборатории, метода, популяции, возраста, беременности. Это ориентир, не истина в последней инстанции."
+  },
+  "analytes": {
+    "wbc": {
+      "ru": "Лейкоциты",
+      "en": "WBC",
+      "names": [
+        "wbc",
+        "white blood cells",
+        "leukocytes",
+        "лейкоциты",
+        "wbc count",
+        "wbc#",
+        "wbc абс",
+        "leukocyty",
+        "krwinki białe"
+      ],
+      "canonical_unit": "10^9/L",
+      "units_accepted": {
+        "10^9/l": 1,
+        "10e9/l": 1,
+        "x10^9/l": 1,
+        "10^3/ul": 1,
+        "10^3/µl": 1,
+        "/ul": 0.001,
+        "g/l": 1,
+        "тыс/мкл": 1,
+        "тыс": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 4.0,
+          "high": 11.0
+        }
+      },
+      "critical": {
+        "low": 2.0,
+        "high": 30.0
+      },
+      "panel": "cbc",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 9.0,
+          "high": 30.0
+        },
+        {
+          "label": "1 мес–1 г",
+          "min": 0.077,
+          "max": 1,
+          "low": 6.0,
+          "high": 17.5
+        },
+        {
+          "label": "1–6 лет",
+          "min": 1,
+          "max": 6,
+          "low": 5.0,
+          "high": 15.5
+        },
+        {
+          "label": "6–12 лет",
+          "min": 6,
+          "max": 12,
+          "low": 4.5,
+          "high": 13.5
+        },
+        {
+          "label": "12–18 лет",
+          "min": 12,
+          "max": 18,
+          "low": 4.5,
+          "high": 13.0
+        }
+      ]
+    },
+    "rbc": {
+      "ru": "Эритроциты",
+      "en": "RBC",
+      "names": [
+        "rbc",
+        "red blood cells",
+        "erythrocytes",
+        "эритроциты",
+        "rbc count",
+        "erytrocyty",
+        "krwinki czerwone"
+      ],
+      "canonical_unit": "10^12/L",
+      "units_accepted": {
+        "10^12/l": 1,
+        "10e12/l": 1,
+        "x10^12/l": 1,
+        "10^6/ul": 1,
+        "10^6/µl": 1,
+        "млн/мкл": 1,
+        "t/l": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 4.5,
+          "high": 5.9
+        },
+        "female": {
+          "low": 4.0,
+          "high": 5.2
+        },
+        "default": {
+          "low": 4.0,
+          "high": 5.9
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "hemoglobin": {
+      "ru": "Гемоглобин",
+      "en": "Hemoglobin",
+      "names": [
+        "hemoglobin",
+        "haemoglobin",
+        "hgb",
+        "hb",
+        "гемоглобин",
+        "гем",
+        "hemoglobina"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "g/dl": 10,
+        "g/dL": 10,
+        "mmol/l": 16.114,
+        "г/л": 1,
+        "г/дл": 10
+      },
+      "ranges": {
+        "male": {
+          "low": 135,
+          "high": 175
+        },
+        "female": {
+          "low": 120,
+          "high": 155
+        },
+        "default": {
+          "low": 120,
+          "high": 175
+        }
+      },
+      "critical": {
+        "low": 70,
+        "high": 200
+      },
+      "panel": "cbc",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 145,
+          "high": 225
+        },
+        {
+          "label": "1–2 мес",
+          "min": 0.077,
+          "max": 0.17,
+          "low": 100,
+          "high": 180
+        },
+        {
+          "label": "2–6 мес",
+          "min": 0.17,
+          "max": 0.5,
+          "low": 95,
+          "high": 135
+        },
+        {
+          "label": "6 мес–2 г",
+          "min": 0.5,
+          "max": 2,
+          "low": 105,
+          "high": 135
+        },
+        {
+          "label": "2–6 лет",
+          "min": 2,
+          "max": 6,
+          "low": 115,
+          "high": 135
+        },
+        {
+          "label": "6–12 лет",
+          "min": 6,
+          "max": 12,
+          "low": 115,
+          "high": 155
+        },
+        {
+          "label": "12–18 лет",
+          "min": 12,
+          "max": 18,
+          "male": {
+            "low": 130,
+            "high": 160
+          },
+          "female": {
+            "low": 120,
+            "high": 160
+          }
+        }
+      ]
+    },
+    "hematocrit": {
+      "ru": "Гематокрит",
+      "en": "Hematocrit",
+      "names": [
+        "hematocrit",
+        "haematocrit",
+        "hct",
+        "гематокрит",
+        "ht",
+        "hematokryt"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "l/l": 100,
+        "ratio": 100,
+        "fraction": 100
+      },
+      "ranges": {
+        "male": {
+          "low": 41,
+          "high": 53
+        },
+        "female": {
+          "low": 36,
+          "high": 46
+        },
+        "default": {
+          "low": 36,
+          "high": 53
+        }
+      },
+      "critical": {
+        "low": 20,
+        "high": 60
+      },
+      "panel": "cbc",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 45,
+          "high": 67
+        },
+        {
+          "label": "1–6 мес",
+          "min": 0.077,
+          "max": 0.5,
+          "low": 29,
+          "high": 42
+        },
+        {
+          "label": "6 мес–6 лет",
+          "min": 0.5,
+          "max": 6,
+          "low": 33,
+          "high": 40
+        },
+        {
+          "label": "6–12 лет",
+          "min": 6,
+          "max": 12,
+          "low": 34,
+          "high": 45
+        },
+        {
+          "label": "12–18 лет",
+          "min": 12,
+          "max": 18,
+          "male": {
+            "low": 40,
+            "high": 52
+          },
+          "female": {
+            "low": 35,
+            "high": 46
+          }
+        }
+      ]
+    },
+    "mcv": {
+      "ru": "MCV (средний объём эритроцита)",
+      "en": "MCV",
+      "names": [
+        "mcv",
+        "mean corpuscular volume",
+        "mcv"
+      ],
+      "canonical_unit": "fL",
+      "units_accepted": {
+        "fl": 1,
+        "fL": 1,
+        "um^3": 1,
+        "фл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 80,
+          "high": 100
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "mch": {
+      "ru": "MCH (среднее содержание Hb)",
+      "en": "MCH",
+      "names": [
+        "mch",
+        "mean corpuscular hemoglobin"
+      ],
+      "canonical_unit": "pg",
+      "units_accepted": {
+        "pg": 1,
+        "пг": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 27,
+          "high": 33
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "mchc": {
+      "ru": "MCHC",
+      "en": "MCHC",
+      "names": [
+        "mchc",
+        "mean corpuscular hemoglobin concentration"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "g/dl": 10,
+        "г/л": 1,
+        "г/дл": 10
+      },
+      "ranges": {
+        "default": {
+          "low": 320,
+          "high": 360
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "rdw": {
+      "ru": "RDW (распределение эритроцитов)",
+      "en": "RDW",
+      "names": [
+        "rdw",
+        "rdw-cv",
+        "red cell distribution width"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 11.5,
+          "high": 14.5
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "platelets": {
+      "ru": "Тромбоциты",
+      "en": "Platelets",
+      "names": [
+        "platelets",
+        "plt",
+        "platelet count",
+        "тромбоциты",
+        "plt count",
+        "płytki krwi",
+        "plytki krwi",
+        "trombocyty"
+      ],
+      "canonical_unit": "10^9/L",
+      "units_accepted": {
+        "10^9/l": 1,
+        "10^3/ul": 1,
+        "10^3/µl": 1,
+        "тыс/мкл": 1,
+        "g/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 150,
+          "high": 400
+        }
+      },
+      "critical": {
+        "low": 30,
+        "high": 1000
+      },
+      "panel": "cbc"
+    },
+    "neutrophils_pct": {
+      "ru": "Нейтрофилы %",
+      "en": "Neutrophils %",
+      "names": [
+        "neutrophils %",
+        "neut %",
+        "neutrophils percent",
+        "нейтрофилы %",
+        "нейтрофилы, %",
+        "neutrofile %",
+        "neutrofile procent"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 40,
+          "high": 70
+        }
+      },
+      "critical": null,
+      "panel": "cbc",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 40,
+          "high": 70
+        },
+        {
+          "label": "1 мес–4 г",
+          "min": 0.077,
+          "max": 4,
+          "low": 20,
+          "high": 45
+        },
+        {
+          "label": "4–10 лет",
+          "min": 4,
+          "max": 10,
+          "low": 30,
+          "high": 55
+        }
+      ]
+    },
+    "neutrophils_abs": {
+      "ru": "Нейтрофилы абс.",
+      "en": "Neutrophils abs",
+      "names": [
+        "neutrophils abs",
+        "anc",
+        "absolute neutrophil count",
+        "neut#",
+        "нейтрофилы абс",
+        "нейтрофилы, абс",
+        "neutrofile",
+        "neutrofile bezwzględne"
+      ],
+      "canonical_unit": "10^9/L",
+      "units_accepted": {
+        "10^9/l": 1,
+        "10^3/ul": 1,
+        "тыс/мкл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 1.8,
+          "high": 7.5
+        }
+      },
+      "critical": {
+        "low": 0.5,
+        "high": null
+      },
+      "panel": "cbc"
+    },
+    "lymphocytes_pct": {
+      "ru": "Лимфоциты %",
+      "en": "Lymphocytes %",
+      "names": [
+        "lymphocytes %",
+        "lymph %",
+        "лимфоциты %",
+        "лимфоциты, %",
+        "limfocyty %"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 20,
+          "high": 45
+        }
+      },
+      "critical": null,
+      "panel": "cbc",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 20,
+          "high": 45
+        },
+        {
+          "label": "1 мес–4 г",
+          "min": 0.077,
+          "max": 4,
+          "low": 45,
+          "high": 75
+        },
+        {
+          "label": "4–10 лет",
+          "min": 4,
+          "max": 10,
+          "low": 35,
+          "high": 65
+        }
+      ]
+    },
+    "lymphocytes_abs": {
+      "ru": "Лимфоциты абс.",
+      "en": "Lymphocytes abs",
+      "names": [
+        "lymphocytes abs",
+        "lymph#",
+        "лимфоциты абс",
+        "limfocyty",
+        "limfocyty bezwzględne"
+      ],
+      "canonical_unit": "10^9/L",
+      "units_accepted": {
+        "10^9/l": 1,
+        "10^3/ul": 1,
+        "тыс/мкл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 1.0,
+          "high": 4.0
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "monocytes_pct": {
+      "ru": "Моноциты %",
+      "en": "Monocytes %",
+      "names": [
+        "monocytes %",
+        "mono %",
+        "моноциты %",
+        "monocyty %",
+        "monocyty"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 2,
+          "high": 10
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "eosinophils_pct": {
+      "ru": "Эозинофилы %",
+      "en": "Eosinophils %",
+      "names": [
+        "eosinophils %",
+        "eos %",
+        "эозинофилы %",
+        "eozynofile %",
+        "eozynofile"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 1,
+          "high": 6
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "basophils_pct": {
+      "ru": "Базофилы %",
+      "en": "Basophils %",
+      "names": [
+        "basophils %",
+        "baso %",
+        "базофилы %",
+        "bazofile %",
+        "bazofile"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 2
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "esr": {
+      "ru": "СОЭ",
+      "en": "ESR",
+      "names": [
+        "esr",
+        "erythrocyte sedimentation rate",
+        "соэ",
+        "sed rate",
+        "ob",
+        "odczyn biernackiego",
+        "opad"
+      ],
+      "canonical_unit": "mm/hr",
+      "units_accepted": {
+        "mm/hr": 1,
+        "mm/h": 1,
+        "мм/ч": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 0,
+          "high": 20
+        },
+        "female": {
+          "low": 0,
+          "high": 30
+        },
+        "default": {
+          "low": 0,
+          "high": 30
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "glucose": {
+      "ru": "Глюкоза (натощак)",
+      "en": "Glucose (fasting)",
+      "names": [
+        "glucose",
+        "glu",
+        "глюкоза",
+        "сахар",
+        "blood glucose",
+        "fasting glucose",
+        "glukoza",
+        "glikemia",
+        "cukier",
+        "poziom cukru"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.0555,
+        "мг/дл": 0.0555
+      },
+      "ranges": {
+        "default": {
+          "low": 3.9,
+          "high": 5.5
+        }
+      },
+      "critical": {
+        "low": 2.2,
+        "high": 25.0
+      },
+      "panel": "metabolic"
+    },
+    "hba1c": {
+      "ru": "Гликированный гемоглобин (HbA1c)",
+      "en": "HbA1c",
+      "names": [
+        "hba1c",
+        "a1c",
+        "glycated hemoglobin",
+        "гликированный гемоглобин",
+        "hba1c",
+        "hemoglobina glikowana"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "mmol/mol": 0.0915
+      },
+      "ranges": {
+        "default": {
+          "low": 4.0,
+          "high": 5.6
+        }
+      },
+      "critical": null,
+      "interpretation_thresholds": {
+        "prediabetes": [
+          5.7,
+          6.4
+        ],
+        "diabetes": [
+          6.5,
+          null
+        ]
+      },
+      "panel": "metabolic"
+    },
+    "urea": {
+      "ru": "Мочевина",
+      "en": "Urea / BUN",
+      "names": [
+        "urea",
+        "bun",
+        "blood urea nitrogen",
+        "мочевина",
+        "urea nitrogen",
+        "mocznik"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.357,
+        "мг/дл": 0.357
+      },
+      "_note_bun": "Если бланк даёт BUN в mg/dL, множитель 0.357 даёт urea в mmol/L. Если дают urea mg/dL — множитель 0.1665.",
+      "ranges": {
+        "default": {
+          "low": 2.5,
+          "high": 7.1
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 35.7
+      },
+      "panel": "renal"
+    },
+    "creatinine": {
+      "ru": "Креатинин",
+      "en": "Creatinine",
+      "names": [
+        "creatinine",
+        "creat",
+        "креатинин",
+        "kreatynina"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "µmol/l": 1,
+        "мкмоль/л": 1,
+        "mg/dl": 88.42,
+        "мг/дл": 88.42
+      },
+      "ranges": {
+        "male": {
+          "low": 62,
+          "high": 115
+        },
+        "female": {
+          "low": 53,
+          "high": 97
+        },
+        "default": {
+          "low": 53,
+          "high": 115
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 500
+      },
+      "panel": "renal",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 27,
+          "high": 88
+        },
+        {
+          "label": "1 мес–1 г",
+          "min": 0.077,
+          "max": 1,
+          "low": 18,
+          "high": 35
+        },
+        {
+          "label": "1–3 года",
+          "min": 1,
+          "max": 3,
+          "low": 20,
+          "high": 37
+        },
+        {
+          "label": "3–12 лет",
+          "min": 3,
+          "max": 12,
+          "low": 27,
+          "high": 62
+        },
+        {
+          "label": "12–18 лет",
+          "min": 12,
+          "max": 18,
+          "male": {
+            "low": 50,
+            "high": 100
+          },
+          "female": {
+            "low": 44,
+            "high": 88
+          }
+        }
+      ]
+    },
+    "egfr": {
+      "ru": "СКФ (eGFR)",
+      "en": "eGFR",
+      "names": [
+        "egfr",
+        "gfr",
+        "estimated gfr",
+        "скф",
+        "рскф",
+        "szacowany gfr"
+      ],
+      "canonical_unit": "mL/min/1.73m^2",
+      "units_accepted": {
+        "ml/min/1.73m^2": 1,
+        "ml/min": 1,
+        "мл/мин": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 90,
+          "high": 200
+        }
+      },
+      "critical": {
+        "low": 15,
+        "high": null
+      },
+      "panel": "renal"
+    },
+    "sodium": {
+      "ru": "Натрий",
+      "en": "Sodium",
+      "names": [
+        "sodium",
+        "na",
+        "na+",
+        "натрий",
+        "sód",
+        "sod"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "meq/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 135,
+          "high": 145
+        }
+      },
+      "critical": {
+        "low": 120,
+        "high": 160
+      },
+      "panel": "electrolytes"
+    },
+    "potassium": {
+      "ru": "Калий",
+      "en": "Potassium",
+      "names": [
+        "potassium",
+        "k",
+        "k+",
+        "калий",
+        "potas"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "meq/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 3.5,
+          "high": 5.1
+        }
+      },
+      "critical": {
+        "low": 2.5,
+        "high": 6.0
+      },
+      "panel": "electrolytes",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 3.7,
+          "high": 5.9
+        },
+        {
+          "label": "1 мес–18 лет",
+          "min": 0.077,
+          "max": 18,
+          "low": 3.4,
+          "high": 5.3
+        }
+      ]
+    },
+    "chloride": {
+      "ru": "Хлор",
+      "en": "Chloride",
+      "names": [
+        "chloride",
+        "cl",
+        "cl-",
+        "хлор",
+        "хлориды",
+        "chlorki",
+        "chlor"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "meq/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 98,
+          "high": 107
+        }
+      },
+      "critical": {
+        "low": 80,
+        "high": 120
+      },
+      "panel": "electrolytes"
+    },
+    "bicarbonate": {
+      "ru": "Бикарбонат (CO2)",
+      "en": "Bicarbonate",
+      "names": [
+        "bicarbonate",
+        "hco3",
+        "co2",
+        "tco2",
+        "бикарбонат"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "meq/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 22,
+          "high": 29
+        }
+      },
+      "critical": {
+        "low": 10,
+        "high": 40
+      },
+      "panel": "electrolytes"
+    },
+    "calcium": {
+      "ru": "Кальций общий",
+      "en": "Calcium total",
+      "names": [
+        "calcium",
+        "ca",
+        "ca total",
+        "total calcium",
+        "кальций",
+        "кальций общий",
+        "wapń całkowity",
+        "wapn calkowity",
+        "wapń",
+        "wapn"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.2495,
+        "мг/дл": 0.2495
+      },
+      "ranges": {
+        "default": {
+          "low": 2.15,
+          "high": 2.55
+        }
+      },
+      "critical": {
+        "low": 1.5,
+        "high": 3.25
+      },
+      "panel": "electrolytes",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 1.9,
+          "high": 2.6
+        },
+        {
+          "label": "1 мес–18 лет",
+          "min": 0.077,
+          "max": 18,
+          "low": 2.2,
+          "high": 2.7
+        }
+      ]
+    },
+    "magnesium": {
+      "ru": "Магний",
+      "en": "Magnesium",
+      "names": [
+        "magnesium",
+        "mg",
+        "mg2+",
+        "магний",
+        "magnez"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.4114,
+        "мг/дл": 0.4114
+      },
+      "ranges": {
+        "default": {
+          "low": 0.7,
+          "high": 1.0
+        }
+      },
+      "critical": {
+        "low": 0.4,
+        "high": 2.0
+      },
+      "panel": "electrolytes"
+    },
+    "phosphate": {
+      "ru": "Фосфор неорганический",
+      "en": "Phosphate",
+      "names": [
+        "phosphate",
+        "phosphorus",
+        "p",
+        "фосфор",
+        "фосфаты",
+        "fosfor nieorganiczny",
+        "fosforany",
+        "fosfor"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.3229,
+        "мг/дл": 0.3229
+      },
+      "ranges": {
+        "default": {
+          "low": 0.81,
+          "high": 1.45
+        }
+      },
+      "critical": {
+        "low": 0.3,
+        "high": 3.0
+      },
+      "panel": "electrolytes",
+      "age_ranges": [
+        {
+          "label": "0–1 год",
+          "min": 0,
+          "max": 1,
+          "low": 1.3,
+          "high": 2.3
+        },
+        {
+          "label": "1–5 лет",
+          "min": 1,
+          "max": 5,
+          "low": 1.1,
+          "high": 1.95
+        },
+        {
+          "label": "5–12 лет",
+          "min": 5,
+          "max": 12,
+          "low": 1.0,
+          "high": 1.8
+        },
+        {
+          "label": "12–18 лет",
+          "min": 12,
+          "max": 18,
+          "low": 0.9,
+          "high": 1.5
+        }
+      ]
+    },
+    "total_protein": {
+      "ru": "Общий белок",
+      "en": "Total protein",
+      "names": [
+        "total protein",
+        "protein",
+        "общий белок",
+        "белок",
+        "białko całkowite",
+        "bialko calkowite"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "g/dl": 10,
+        "г/л": 1,
+        "г/дл": 10
+      },
+      "ranges": {
+        "default": {
+          "low": 64,
+          "high": 83
+        }
+      },
+      "critical": null,
+      "panel": "liver"
+    },
+    "albumin": {
+      "ru": "Альбумин",
+      "en": "Albumin",
+      "names": [
+        "albumin",
+        "alb",
+        "альбумин",
+        "albumina",
+        "albuminy"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "g/dl": 10,
+        "г/л": 1,
+        "г/дл": 10
+      },
+      "ranges": {
+        "default": {
+          "low": 35,
+          "high": 50
+        }
+      },
+      "critical": null,
+      "panel": "liver"
+    },
+    "bilirubin_total": {
+      "ru": "Билирубин общий",
+      "en": "Bilirubin total",
+      "names": [
+        "bilirubin total",
+        "total bilirubin",
+        "tbil",
+        "билирубин общий",
+        "билирубин",
+        "bilirubina całkowita",
+        "bilirubina calkowita",
+        "bilirubina"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "mg/dl": 17.1,
+        "мг/дл": 17.1
+      },
+      "ranges": {
+        "default": {
+          "low": 5,
+          "high": 21
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 300
+      },
+      "panel": "liver",
+      "_note_infant": "У новорождённых норма зависит от часов жизни и срока гестации — оценивай по номограмме (Bhutani), а не по взрослому порогу."
+    },
+    "bilirubin_direct": {
+      "ru": "Билирубин прямой",
+      "en": "Bilirubin direct",
+      "names": [
+        "bilirubin direct",
+        "direct bilirubin",
+        "dbil",
+        "conjugated bilirubin",
+        "билирубин прямой",
+        "bilirubina bezpośrednia",
+        "bilirubina sprzężona"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "mg/dl": 17.1,
+        "мг/дл": 17.1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 5
+        }
+      },
+      "critical": null,
+      "panel": "liver"
+    },
+    "alt": {
+      "ru": "АЛТ",
+      "en": "ALT",
+      "names": [
+        "alt",
+        "sgpt",
+        "alanine aminotransferase",
+        "алт",
+        "аланинаминотрансфераза",
+        "alat",
+        "aminotransferaza alaninowa"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 0,
+          "high": 41
+        },
+        "female": {
+          "low": 0,
+          "high": 33
+        },
+        "default": {
+          "low": 0,
+          "high": 41
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 1000
+      },
+      "panel": "liver"
+    },
+    "ast": {
+      "ru": "АСТ",
+      "en": "AST",
+      "names": [
+        "ast",
+        "sgot",
+        "aspartate aminotransferase",
+        "аст",
+        "аспартатаминотрансфераза",
+        "aspat",
+        "aminotransferaza asparaginianowa"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 40
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 1000
+      },
+      "panel": "liver"
+    },
+    "alp": {
+      "ru": "Щелочная фосфатаза",
+      "en": "ALP",
+      "names": [
+        "alp",
+        "alkaline phosphatase",
+        "щф",
+        "щелочная фосфатаза",
+        "fosfataza zasadowa",
+        "fosfataza alkaliczna"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 40,
+          "high": 129
+        }
+      },
+      "critical": null,
+      "panel": "liver",
+      "age_ranges": [
+        {
+          "label": "0–1 год",
+          "min": 0,
+          "max": 1,
+          "low": 80,
+          "high": 470
+        },
+        {
+          "label": "1–10 лет",
+          "min": 1,
+          "max": 10,
+          "low": 130,
+          "high": 430
+        },
+        {
+          "label": "10–13 лет",
+          "min": 10,
+          "max": 13,
+          "low": 130,
+          "high": 560
+        },
+        {
+          "label": "13–18 лет",
+          "min": 13,
+          "max": 18,
+          "male": {
+            "low": 100,
+            "high": 500
+          },
+          "female": {
+            "low": 50,
+            "high": 280
+          }
+        }
+      ]
+    },
+    "ggt": {
+      "ru": "ГГТ",
+      "en": "GGT",
+      "names": [
+        "ggt",
+        "gamma gt",
+        "gamma-glutamyl transferase",
+        "ггт",
+        "гамма-гт",
+        "ggtp",
+        "gamma-glutamylotranspeptydaza"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 0,
+          "high": 55
+        },
+        "female": {
+          "low": 0,
+          "high": 38
+        },
+        "default": {
+          "low": 0,
+          "high": 55
+        }
+      },
+      "critical": null,
+      "panel": "liver",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 12,
+          "high": 122
+        },
+        {
+          "label": "1 мес–1 год",
+          "min": 0.077,
+          "max": 1,
+          "low": 1,
+          "high": 39
+        }
+      ]
+    },
+    "ldh": {
+      "ru": "ЛДГ",
+      "en": "LDH",
+      "names": [
+        "ldh",
+        "lactate dehydrogenase",
+        "лдг",
+        "dehydrogenaza mleczanowa"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 140,
+          "high": 280
+        }
+      },
+      "critical": null,
+      "panel": "liver"
+    },
+    "amylase": {
+      "ru": "Амилаза",
+      "en": "Amylase",
+      "names": [
+        "amylase",
+        "amy",
+        "амилаза",
+        "amylaza"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 28,
+          "high": 100
+        }
+      },
+      "critical": null,
+      "panel": "liver"
+    },
+    "lipase": {
+      "ru": "Липаза",
+      "en": "Lipase",
+      "names": [
+        "lipase",
+        "липаза",
+        "lipaza"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 10,
+          "high": 60
+        }
+      },
+      "critical": null,
+      "panel": "liver"
+    },
+    "uric_acid": {
+      "ru": "Мочевая кислота",
+      "en": "Uric acid",
+      "names": [
+        "uric acid",
+        "urate",
+        "мочевая кислота",
+        "kwas moczowy"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "mg/dl": 59.48,
+        "мг/дл": 59.48
+      },
+      "ranges": {
+        "male": {
+          "low": 200,
+          "high": 420
+        },
+        "female": {
+          "low": 140,
+          "high": 360
+        },
+        "default": {
+          "low": 140,
+          "high": 420
+        }
+      },
+      "critical": null,
+      "panel": "metabolic"
+    },
+    "cholesterol_total": {
+      "ru": "Холестерин общий",
+      "en": "Total cholesterol",
+      "names": [
+        "total cholesterol",
+        "cholesterol",
+        "chol",
+        "холестерин",
+        "холестерин общий",
+        "cholesterol całkowity",
+        "cholesterol calkowity"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.02586,
+        "мг/дл": 0.02586
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 5.2
+        }
+      },
+      "critical": null,
+      "panel": "lipid"
+    },
+    "ldl": {
+      "ru": "ЛПНП (LDL)",
+      "en": "LDL cholesterol",
+      "names": [
+        "ldl",
+        "ldl cholesterol",
+        "ldl-c",
+        "лпнп",
+        "cholesterol ldl"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.02586,
+        "мг/дл": 0.02586
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 2.6
+        }
+      },
+      "critical": null,
+      "interpretation_thresholds": {
+        "optimal": [
+          0,
+          2.6
+        ],
+        "borderline": [
+          3.4,
+          4.1
+        ],
+        "high": [
+          4.1,
+          null
+        ]
+      },
+      "panel": "lipid"
+    },
+    "hdl": {
+      "ru": "ЛПВП (HDL)",
+      "en": "HDL cholesterol",
+      "names": [
+        "hdl",
+        "hdl cholesterol",
+        "hdl-c",
+        "лпвп",
+        "cholesterol hdl"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.02586,
+        "мг/дл": 0.02586
+      },
+      "ranges": {
+        "male": {
+          "low": 1.0,
+          "high": 3.0
+        },
+        "female": {
+          "low": 1.3,
+          "high": 3.0
+        },
+        "default": {
+          "low": 1.0,
+          "high": 3.0
+        }
+      },
+      "direction": "higher_better",
+      "critical": null,
+      "panel": "lipid"
+    },
+    "triglycerides": {
+      "ru": "Триглицериды",
+      "en": "Triglycerides",
+      "names": [
+        "triglycerides",
+        "trig",
+        "tg",
+        "триглицериды",
+        "triglicerydy",
+        "trójglicerydy",
+        "trojglicerydy"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.01129,
+        "мг/дл": 0.01129
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 1.7
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 11.3
+      },
+      "panel": "lipid"
+    },
+    "tsh": {
+      "ru": "ТТГ",
+      "en": "TSH",
+      "names": [
+        "tsh",
+        "thyroid stimulating hormone",
+        "ттг",
+        "tyreotropina",
+        "hormon tyreotropowy"
+      ],
+      "canonical_unit": "mIU/L",
+      "units_accepted": {
+        "miu/l": 1,
+        "uiu/ml": 1,
+        "мме/л": 1,
+        "мкме/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.4,
+          "high": 4.0
+        }
+      },
+      "critical": null,
+      "panel": "thyroid",
+      "age_ranges": [
+        {
+          "label": "0–28 дн",
+          "min": 0,
+          "max": 0.077,
+          "low": 1.0,
+          "high": 20.0
+        },
+        {
+          "label": "1 мес–1 год",
+          "min": 0.077,
+          "max": 1,
+          "low": 0.8,
+          "high": 8.2
+        },
+        {
+          "label": "1–18 лет",
+          "min": 1,
+          "max": 18,
+          "low": 0.5,
+          "high": 5.0
+        }
+      ]
+    },
+    "ft4": {
+      "ru": "Т4 свободный",
+      "en": "Free T4",
+      "names": [
+        "ft4",
+        "free t4",
+        "free thyroxine",
+        "т4 свободный",
+        "т4 св",
+        "wolna tyroksyna",
+        "tyroksyna wolna"
+      ],
+      "canonical_unit": "pmol/L",
+      "units_accepted": {
+        "pmol/l": 1,
+        "пмоль/л": 1,
+        "ng/dl": 12.87,
+        "нг/дл": 12.87
+      },
+      "ranges": {
+        "default": {
+          "low": 12,
+          "high": 22
+        }
+      },
+      "critical": null,
+      "panel": "thyroid"
+    },
+    "ft3": {
+      "ru": "Т3 свободный",
+      "en": "Free T3",
+      "names": [
+        "ft3",
+        "free t3",
+        "т3 свободный",
+        "т3 св",
+        "wolna trijodotyronina",
+        "trijodotyronina wolna"
+      ],
+      "canonical_unit": "pmol/L",
+      "units_accepted": {
+        "pmol/l": 1,
+        "пмоль/л": 1,
+        "pg/ml": 1.536,
+        "пг/мл": 1.536
+      },
+      "ranges": {
+        "default": {
+          "low": 3.1,
+          "high": 6.8
+        }
+      },
+      "critical": null,
+      "panel": "thyroid"
+    },
+    "ferritin": {
+      "ru": "Ферритин",
+      "en": "Ferritin",
+      "names": [
+        "ferritin",
+        "ферритин",
+        "ferrytyna"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 30,
+          "high": 400
+        },
+        "female": {
+          "low": 15,
+          "high": 150
+        },
+        "default": {
+          "low": 15,
+          "high": 400
+        }
+      },
+      "critical": null,
+      "panel": "iron"
+    },
+    "iron": {
+      "ru": "Железо сывороточное",
+      "en": "Serum iron",
+      "names": [
+        "iron",
+        "serum iron",
+        "железо",
+        "железо сывороточное",
+        "żelazo",
+        "zelazo",
+        "fe"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "ug/dl": 0.1791,
+        "мкг/дл": 0.1791
+      },
+      "ranges": {
+        "default": {
+          "low": 11,
+          "high": 30
+        }
+      },
+      "critical": null,
+      "panel": "iron"
+    },
+    "tibc": {
+      "ru": "ОЖСС (TIBC)",
+      "en": "TIBC",
+      "names": [
+        "tibc",
+        "total iron binding capacity",
+        "ожсс",
+        "całkowita zdolność wiązania żelaza",
+        "cłwż"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "ug/dl": 0.1791,
+        "мкг/дл": 0.1791
+      },
+      "ranges": {
+        "default": {
+          "low": 45,
+          "high": 76
+        }
+      },
+      "critical": null,
+      "panel": "iron"
+    },
+    "transferrin_sat": {
+      "ru": "Насыщение трансферрина",
+      "en": "Transferrin saturation",
+      "names": [
+        "transferrin saturation",
+        "tsat",
+        "насыщение трансферрина",
+        "wysycenie transferyny",
+        "saturacja transferyny"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 20,
+          "high": 50
+        }
+      },
+      "critical": null,
+      "panel": "iron"
+    },
+    "vitamin_d": {
+      "ru": "Витамин D (25-OH)",
+      "en": "Vitamin D 25-OH",
+      "names": [
+        "vitamin d",
+        "25-oh vitamin d",
+        "25(oh)d",
+        "витамин д",
+        "витамин d",
+        "witamina d",
+        "witamina d3",
+        "metabolit 25(oh)",
+        "witamina d metabolit 25(oh)"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "nmol/l": 0.4006,
+        "нмоль/л": 0.4006
+      },
+      "ranges": {
+        "default": {
+          "low": 30,
+          "high": 100
+        }
+      },
+      "interpretation_thresholds": {
+        "deficient": [
+          0,
+          20
+        ],
+        "insufficient": [
+          20,
+          30
+        ],
+        "sufficient": [
+          30,
+          100
+        ]
+      },
+      "critical": null,
+      "panel": "vitamins"
+    },
+    "vitamin_b12": {
+      "ru": "Витамин B12",
+      "en": "Vitamin B12",
+      "names": [
+        "vitamin b12",
+        "b12",
+        "cobalamin",
+        "витамин б12",
+        "витамин b12",
+        "witamina b12",
+        "kobalamina"
+      ],
+      "canonical_unit": "pmol/L",
+      "units_accepted": {
+        "pmol/l": 1,
+        "пмоль/л": 1,
+        "pg/ml": 0.7378,
+        "пг/мл": 0.7378,
+        "ng/l": 0.7378
+      },
+      "ranges": {
+        "default": {
+          "low": 148,
+          "high": 664
+        }
+      },
+      "critical": null,
+      "panel": "vitamins"
+    },
+    "folate": {
+      "ru": "Фолиевая кислота",
+      "en": "Folate",
+      "names": [
+        "folate",
+        "folic acid",
+        "фолиевая кислота",
+        "фолаты",
+        "kwas foliowy",
+        "foliany"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1,
+        "ng/ml": 2.266,
+        "нг/мл": 2.266
+      },
+      "ranges": {
+        "default": {
+          "low": 10,
+          "high": 45
+        }
+      },
+      "critical": null,
+      "panel": "vitamins"
+    },
+    "crp": {
+      "ru": "C-реактивный белок",
+      "en": "CRP",
+      "names": [
+        "crp",
+        "c-reactive protein",
+        "срб",
+        "с-реактивный белок",
+        "białko c-reaktywne",
+        "bialko c-reaktywne"
+      ],
+      "canonical_unit": "mg/L",
+      "units_accepted": {
+        "mg/l": 1,
+        "мг/л": 1,
+        "mg/dl": 10,
+        "мг/дл": 10
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 5
+        }
+      },
+      "critical": null,
+      "panel": "inflammation"
+    },
+    "procalcitonin": {
+      "ru": "Прокальцитонин",
+      "en": "Procalcitonin",
+      "names": [
+        "procalcitonin",
+        "pct",
+        "прокальцитонин",
+        "prokalcytonina"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 0.5
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 2.0
+      },
+      "panel": "inflammation"
+    },
+    "troponin": {
+      "ru": "Тропонин",
+      "en": "Troponin",
+      "names": [
+        "troponin",
+        "troponin i",
+        "troponin t",
+        "hs-troponin",
+        "тропонин",
+        "troponina",
+        "troponina i",
+        "troponina t"
+      ],
+      "canonical_unit": "ng/L",
+      "units_accepted": {
+        "ng/l": 1,
+        "нг/л": 1,
+        "ng/ml": 1000,
+        "pg/ml": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 14
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 52
+      },
+      "_note": "Порог зависит от конкретного assay и 99-го перцентиля. Любой рост на фоне клиники — повод к немедленной оценке.",
+      "panel": "cardiac"
+    },
+    "bnp": {
+      "ru": "BNP",
+      "en": "BNP",
+      "names": [
+        "bnp",
+        "b-type natriuretic peptide"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1,
+        "ng/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 100
+        }
+      },
+      "critical": null,
+      "panel": "cardiac"
+    },
+    "nt_probnp": {
+      "ru": "NT-proBNP",
+      "en": "NT-proBNP",
+      "names": [
+        "nt-probnp",
+        "ntprobnp",
+        "nt probnp"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1,
+        "ng/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 125
+        }
+      },
+      "critical": null,
+      "panel": "cardiac"
+    },
+    "pt": {
+      "ru": "ПВ (протромбиновое время)",
+      "en": "PT",
+      "names": [
+        "pt",
+        "prothrombin time",
+        "пв",
+        "протромбиновое время",
+        "czas protrombinowy"
+      ],
+      "canonical_unit": "s",
+      "units_accepted": {
+        "s": 1,
+        "sec": 1,
+        "сек": 1,
+        "с": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 11,
+          "high": 13.5
+        }
+      },
+      "critical": null,
+      "panel": "coagulation"
+    },
+    "inr": {
+      "ru": "МНО (INR)",
+      "en": "INR",
+      "names": [
+        "inr",
+        "international normalized ratio",
+        "мно",
+        "wskaźnik inr"
+      ],
+      "canonical_unit": "ratio",
+      "units_accepted": {
+        "ratio": 1,
+        "": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.8,
+          "high": 1.1
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 5.0
+      },
+      "_note": "На варфарине терапевтический диапазон обычно 2.0–3.0 — это НЕ патология. Учитывай приём антикоагулянтов.",
+      "panel": "coagulation"
+    },
+    "aptt": {
+      "ru": "АЧТВ",
+      "en": "aPTT",
+      "names": [
+        "aptt",
+        "ptt",
+        "activated partial thromboplastin time",
+        "ачтв",
+        "czas kaolinowo-kefalinowy"
+      ],
+      "canonical_unit": "s",
+      "units_accepted": {
+        "s": 1,
+        "sec": 1,
+        "сек": 1,
+        "с": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 25,
+          "high": 35
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 70
+      },
+      "panel": "coagulation"
+    },
+    "fibrinogen": {
+      "ru": "Фибриноген",
+      "en": "Fibrinogen",
+      "names": [
+        "fibrinogen",
+        "фибриноген",
+        "fibrynogen"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 2.0,
+          "high": 4.0
+        }
+      },
+      "critical": {
+        "low": 1.0,
+        "high": null
+      },
+      "panel": "coagulation"
+    },
+    "d_dimer": {
+      "ru": "D-димер",
+      "en": "D-dimer",
+      "names": [
+        "d-dimer",
+        "ddimer",
+        "д-димер",
+        "d-dimery",
+        "dimery d"
+      ],
+      "canonical_unit": "ug/mL FEU",
+      "units_accepted": {
+        "ug/ml feu": 1,
+        "mg/l feu": 1,
+        "мкг/мл": 1,
+        "ng/ml feu": 0.001,
+        "ng/ml deu": 0.0005
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 0.5
+        }
+      },
+      "critical": null,
+      "panel": "coagulation"
+    },
+    "urine_sg": {
+      "ru": "Удельный вес мочи",
+      "en": "Urine specific gravity",
+      "names": [
+        "specific gravity",
+        "urine sg",
+        "sg",
+        "удельный вес",
+        "уд вес",
+        "относительная плотность",
+        "плотность мочи",
+        "ciężar właściwy",
+        "ciezar wlasciwy",
+        "gęstość moczu"
+      ],
+      "canonical_unit": "",
+      "units_accepted": {},
+      "ranges": {
+        "default": {
+          "low": 1.003,
+          "high": 1.03
+        }
+      },
+      "critical": null,
+      "panel": "urinalysis"
+    },
+    "urine_ph": {
+      "ru": "pH мочи",
+      "en": "Urine pH",
+      "names": [
+        "urine ph",
+        "ph",
+        "рн мочи",
+        "ph мочи",
+        "реакция мочи",
+        "ph moczu"
+      ],
+      "canonical_unit": "",
+      "units_accepted": {},
+      "ranges": {
+        "default": {
+          "low": 4.5,
+          "high": 8.0
+        }
+      },
+      "critical": null,
+      "panel": "urinalysis"
+    },
+    "urine_wbc_hpf": {
+      "ru": "Лейкоциты в моче (в п/зр)",
+      "en": "Urine WBC /HPF",
+      "names": [
+        "urine wbc",
+        "wbc hpf",
+        "лейкоциты в моче",
+        "лейкоциты мочи",
+        "leukocytes urine",
+        "лейкоциты, в п/зр"
+      ],
+      "canonical_unit": "/HPF",
+      "units_accepted": {
+        "/hpf": 1,
+        "вп/зр": 1,
+        "/мкл": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 0,
+          "high": 3
+        },
+        "female": {
+          "low": 0,
+          "high": 5
+        },
+        "default": {
+          "low": 0,
+          "high": 5
+        }
+      },
+      "critical": null,
+      "panel": "urinalysis",
+      "unit_optional": true
+    },
+    "urine_rbc_hpf": {
+      "ru": "Эритроциты в моче (в п/зр)",
+      "en": "Urine RBC /HPF",
+      "names": [
+        "urine rbc",
+        "rbc hpf",
+        "эритроциты в моче",
+        "эритроциты мочи",
+        "erythrocytes urine",
+        "эритроциты, в п/зр"
+      ],
+      "canonical_unit": "/HPF",
+      "units_accepted": {
+        "/hpf": 1,
+        "вп/зр": 1,
+        "/мкл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 2
+        }
+      },
+      "critical": null,
+      "panel": "urinalysis",
+      "unit_optional": true
+    },
+    "urine_epithelial": {
+      "ru": "Эпителий в моче (в п/зр)",
+      "en": "Urine epithelial /HPF",
+      "names": [
+        "epithelial cells",
+        "эпителий",
+        "плоский эпителий",
+        "эпителий в моче"
+      ],
+      "canonical_unit": "/HPF",
+      "units_accepted": {
+        "/hpf": 1,
+        "вп/зр": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 5
+        }
+      },
+      "critical": null,
+      "panel": "urinalysis",
+      "unit_optional": true
+    },
+    "urine_microalbumin": {
+      "ru": "Микроальбумин мочи",
+      "en": "Urine microalbumin",
+      "names": [
+        "microalbumin",
+        "микроальбумин",
+        "альбумин мочи",
+        "urine albumin"
+      ],
+      "canonical_unit": "mg/L",
+      "units_accepted": {
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 20
+        }
+      },
+      "critical": null,
+      "panel": "urinalysis"
+    },
+    "urine_acr": {
+      "ru": "Альбумин/креатинин мочи (ACR)",
+      "en": "Urine ACR",
+      "names": [
+        "acr",
+        "albumin creatinine ratio",
+        "альбумин-креатининовое соотношение",
+        "соотношение альбумин креатинин",
+        "uacr"
+      ],
+      "canonical_unit": "mg/g",
+      "units_accepted": {
+        "mg/g": 1,
+        "мг/г": 1,
+        "mg/mmol": 8.84,
+        "мг/ммоль": 8.84
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 30
+        }
+      },
+      "interpretation_thresholds": {
+        "normal": [
+          0,
+          30
+        ],
+        "microalbuminuria": [
+          30,
+          300
+        ],
+        "macroalbuminuria": [
+          300,
+          null
+        ]
+      },
+      "critical": null,
+      "panel": "urinalysis",
+      "_note": "ACR 30–300 мг/г — микроальбуминурия (ранний маркёр нефропатии); >300 — макроальбуминурия."
+    },
+    "urine_protein": {
+      "ru": "Белок в моче (качеств.)",
+      "en": "Urine protein",
+      "names": [
+        "urine protein",
+        "protein urine",
+        "белок в моче",
+        "белок мочи",
+        "протеин",
+        "białko",
+        "bialko"
+      ],
+      "qualitative": true,
+      "panel": "urinalysis",
+      "notes": [
+        "Положительный белок — протеинурия; количественно уточняй по суточной потере или ACR."
+      ]
+    },
+    "urine_glucose": {
+      "ru": "Глюкоза в моче",
+      "en": "Urine glucose",
+      "names": [
+        "urine glucose",
+        "glucose urine",
+        "глюкоза в моче",
+        "глюкоза мочи",
+        "сахар в моче",
+        "glukoza (jakościowo)",
+        "glukoza jakościowo"
+      ],
+      "qualitative": true,
+      "panel": "urinalysis",
+      "notes": [
+        "Глюкозурия — при гипергликемии выше почечного порога (~10 ммоль/л) или тубулопатии."
+      ]
+    },
+    "urine_ketones": {
+      "ru": "Кетоны в моче",
+      "en": "Urine ketones",
+      "names": [
+        "urine ketones",
+        "ketones",
+        "кетоны",
+        "кетоновые тела",
+        "ацетон",
+        "ciała ketonowe",
+        "ciala ketonowe",
+        "ketony"
+      ],
+      "qualitative": true,
+      "panel": "urinalysis",
+      "notes": [
+        "Кетонурия — голодание, диабетический кетоз, рвота; при диабете + высокая глюкоза крови — тревожно."
+      ]
+    },
+    "urine_nitrites": {
+      "ru": "Нитриты в моче",
+      "en": "Urine nitrites",
+      "names": [
+        "urine nitrites",
+        "nitrites",
+        "nitrite",
+        "нитриты",
+        "azotyny"
+      ],
+      "qualitative": true,
+      "panel": "urinalysis",
+      "notes": [
+        "Положительные нитриты — косвенный признак бактериальной инфекции (грам-отр. флора)."
+      ]
+    },
+    "urine_leukocyte_esterase": {
+      "ru": "Лейкоцитарная эстераза",
+      "en": "Leukocyte esterase",
+      "names": [
+        "leukocyte esterase",
+        "лейкоцитарная эстераза",
+        "эстераза лейкоцитов",
+        "le",
+        "leukocyty (jakościowo)",
+        "esteraza leukocytów"
+      ],
+      "qualitative": true,
+      "panel": "urinalysis",
+      "notes": [
+        "Положит. эстераза + нитриты — высокая вероятность ИМП."
+      ]
+    },
+    "urine_blood": {
+      "ru": "Кровь/гемоглобин в моче",
+      "en": "Urine blood",
+      "names": [
+        "urine blood",
+        "blood urine",
+        "кровь в моче",
+        "гемоглобин в моче",
+        "скрытая кровь",
+        "эритроциты (кач)",
+        "krew (jakościowo)",
+        "krew w moczu",
+        "erytrocyty (jakościowo)"
+      ],
+      "qualitative": true,
+      "panel": "urinalysis",
+      "notes": [
+        "Положит. кровь — гематурия/гемоглобинурия/миоглобинурия; сопоставь с эритроцитами в осадке."
+      ]
+    },
+    "urine_bilirubin": {
+      "ru": "Билирубин в моче",
+      "en": "Urine bilirubin",
+      "names": [
+        "urine bilirubin",
+        "билирубин в моче",
+        "билирубин мочи",
+        "bilirubina (jakościowo)"
+      ],
+      "qualitative": true,
+      "panel": "urinalysis",
+      "notes": [
+        "Билирубинурия — холестаз/поражение печени (в норме отсутствует)."
+      ]
+    },
+    "urine_urobilinogen": {
+      "ru": "Уробилиноген мочи",
+      "en": "Urobilinogen",
+      "names": [
+        "urobilinogen",
+        "уробилиноген",
+        "уробилин"
+      ],
+      "qualitative": true,
+      "normal_includes_trace": true,
+      "panel": "urinalysis",
+      "notes": [
+        "В норме следовые количества — это норма; резкое повышение — гемолиз/печень; отсутствие — обструкция желчных путей."
+      ]
+    },
+    "anti_xa": {
+      "ru": "Анти-Xa активность",
+      "en": "Anti-Xa",
+      "names": [
+        "anti-xa",
+        "anti xa",
+        "antixa",
+        "anti-factor xa",
+        "анти-ха",
+        "антиха",
+        "анти-xa",
+        "антиxa",
+        "анти ха активность",
+        "активность анти-ха"
+      ],
+      "canonical_unit": "IU/mL",
+      "units_accepted": {
+        "iu/ml": 1,
+        "ме/мл": 1,
+        "u/ml": 1,
+        "ед/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.5,
+          "high": 1.0
+        }
+      },
+      "critical": null,
+      "panel": "coagulation",
+      "_note": "Диапазон зависит от препарата, калибровки и времени забора. НМГ (пик через ~4 ч): терапевт. ~0.5–1.0, профилакт. ~0.2–0.5 МЕ/мл. Для DOAC (ривароксабан/апиксабан) нужна ПРЕПАРАТ-специфичная калибровка и оценка пик/остаток; гепариновая калибровка их количественно не измеряет — только грубый скрининг наличия."
+    },
+    "tt": {
+      "ru": "Тромбиновое время (ТВ)",
+      "en": "Thrombin time",
+      "names": [
+        "thrombin time",
+        "tt",
+        "тромбиновое время",
+        "тв"
+      ],
+      "canonical_unit": "s",
+      "units_accepted": {
+        "s": 1,
+        "sec": 1,
+        "сек": 1,
+        "с": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 14,
+          "high": 21
+        }
+      },
+      "critical": null,
+      "panel": "coagulation",
+      "_note": "Удлинение — дефицит/дисфункция фибриногена, гепарин, прямые ингибиторы тромбина (дабигатран)."
+    },
+    "antithrombin_iii": {
+      "ru": "Антитромбин III",
+      "en": "Antithrombin III",
+      "names": [
+        "antithrombin",
+        "antithrombin iii",
+        "at iii",
+        "atiii",
+        "антитромбин",
+        "антитромбин iii",
+        "ат iii"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 80,
+          "high": 120
+        }
+      },
+      "critical": null,
+      "panel": "coagulation",
+      "_note": "Снижение — наследственный дефицит, ДВС, потеря с мочой, печёночная недостаточность; снижает эффект гепарина."
+    },
+    "cortisol": {
+      "ru": "Кортизол (утро)",
+      "en": "Cortisol (morning)",
+      "names": [
+        "cortisol",
+        "кортизол",
+        "kortyzol"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1,
+        "ug/dl": 27.59,
+        "мкг/дл": 27.59,
+        "ng/ml": 2.759
+      },
+      "ranges": {
+        "default": {
+          "low": 170,
+          "high": 540
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Выражен суточный ритм: норма дана для утра (8:00). Вечером ниже; оценивай по времени забора."
+    },
+    "prolactin": {
+      "ru": "Пролактин",
+      "en": "Prolactin",
+      "names": [
+        "prolactin",
+        "пролактин",
+        "prl",
+        "prolaktyna"
+      ],
+      "canonical_unit": "mIU/L",
+      "units_accepted": {
+        "miu/l": 1,
+        "мме/л": 1,
+        "ng/ml": 21.2,
+        "нг/мл": 21.2,
+        "ug/l": 21.2,
+        "мкг/л": 21.2
+      },
+      "ranges": {
+        "male": {
+          "low": 86,
+          "high": 324
+        },
+        "female": {
+          "low": 102,
+          "high": 496
+        },
+        "default": {
+          "low": 86,
+          "high": 496
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Стресс/еда/сон завышают; выраженное повышение — макропролактин или аденома (сопоставь с клиникой)."
+    },
+    "testosterone_total": {
+      "ru": "Тестостерон общий",
+      "en": "Testosterone total",
+      "names": [
+        "testosterone",
+        "testosterone total",
+        "total testosterone",
+        "тестостерон",
+        "тестостерон общий",
+        "testosteron całkowity",
+        "testosteron"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1,
+        "ng/dl": 0.03467,
+        "нг/дл": 0.03467,
+        "ng/ml": 3.467,
+        "нг/мл": 3.467
+      },
+      "ranges": {
+        "male": {
+          "low": 8.6,
+          "high": 29.0
+        },
+        "female": {
+          "low": 0.3,
+          "high": 2.4
+        },
+        "default": {
+          "low": 0.3,
+          "high": 29.0
+        }
+      },
+      "critical": null,
+      "panel": "hormones"
+    },
+    "estradiol": {
+      "ru": "Эстрадиол (E2)",
+      "en": "Estradiol",
+      "names": [
+        "estradiol",
+        "e2",
+        "эстрадиол"
+      ],
+      "canonical_unit": "pmol/L",
+      "units_accepted": {
+        "pmol/l": 1,
+        "пмоль/л": 1,
+        "pg/ml": 3.671,
+        "пг/мл": 3.671
+      },
+      "ranges": {
+        "male": {
+          "low": 40,
+          "high": 160
+        },
+        "female": {
+          "low": 46,
+          "high": 1600
+        },
+        "default": {
+          "low": 40,
+          "high": 1600
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "У женщин норма сильно зависит от фазы цикла/менопаузы — интерпретируй по дню цикла, не по общему диапазону."
+    },
+    "lh": {
+      "ru": "ЛГ (лютеинизирующий)",
+      "en": "LH",
+      "names": [
+        "lh",
+        "luteinizing hormone",
+        "лг",
+        "лютеинизирующий гормон",
+        "hormon luteinizujący"
+      ],
+      "canonical_unit": "IU/L",
+      "units_accepted": {
+        "iu/l": 1,
+        "ме/л": 1,
+        "miu/ml": 1,
+        "мме/мл": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 1.7,
+          "high": 8.6
+        },
+        "default": {
+          "low": 1.7,
+          "high": 8.6
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "У женщин зависит от фазы цикла (овуляторный пик) и менопаузы — оценивай по дню цикла."
+    },
+    "fsh": {
+      "ru": "ФСГ (фолликулостимулирующий)",
+      "en": "FSH",
+      "names": [
+        "fsh",
+        "follicle stimulating hormone",
+        "фсг",
+        "фолликулостимулирующий гормон",
+        "hormon folikulotropowy"
+      ],
+      "canonical_unit": "IU/L",
+      "units_accepted": {
+        "iu/l": 1,
+        "ме/л": 1,
+        "miu/ml": 1,
+        "мме/мл": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 1.5,
+          "high": 12.4
+        },
+        "default": {
+          "low": 1.5,
+          "high": 12.4
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "У женщин зависит от фазы цикла; высокий ФСГ+ЛГ при низком E2 — менопауза/овариальная недостаточность."
+    },
+    "insulin": {
+      "ru": "Инсулин (натощак)",
+      "en": "Insulin (fasting)",
+      "names": [
+        "insulin",
+        "инсулин",
+        "инсулин натощак",
+        "insulina"
+      ],
+      "canonical_unit": "mU/L",
+      "units_accepted": {
+        "mu/l": 1,
+        "uiu/ml": 1,
+        "µiu/ml": 1,
+        "miu/l": 1,
+        "мед/л": 1,
+        "мкед/мл": 1,
+        "мкме/мл": 1,
+        "pmol/l": 0.144,
+        "пмоль/л": 0.144
+      },
+      "ranges": {
+        "default": {
+          "low": 2.6,
+          "high": 24.9
+        }
+      },
+      "critical": null,
+      "panel": "hormones"
+    },
+    "transferrin": {
+      "ru": "Трансферрин",
+      "en": "Transferrin",
+      "names": [
+        "transferrin",
+        "трансферрин",
+        "transferyna"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 2.0,
+          "high": 3.6
+        }
+      },
+      "critical": null,
+      "panel": "iron"
+    },
+    "stfr": {
+      "ru": "Растворимый рецептор трансферрина (sTfR)",
+      "en": "Soluble transferrin receptor",
+      "names": [
+        "stfr",
+        "soluble transferrin receptor",
+        "растворимый рецептор трансферрина",
+        "рецептор трансферрина"
+      ],
+      "canonical_unit": "mg/L",
+      "units_accepted": {
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 1.8,
+          "high": 4.6
+        }
+      },
+      "critical": null,
+      "panel": "iron",
+      "_note": "Метод-зависим (сверь с референсом бланка). Повышен при истинном дефиците железа, не зависит от воспаления — полезен при сопутствующем воспалении, когда ферритин ложно нормален."
+    },
+    "ph_abg": {
+      "ru": "pH крови (КЩС)",
+      "en": "Blood pH",
+      "names": [
+        "ph abg",
+        "arterial ph",
+        "blood ph",
+        "ph крови",
+        "рн крови",
+        "ph артериальной крови",
+        "ph (abg)"
+      ],
+      "canonical_unit": "",
+      "units_accepted": {},
+      "ranges": {
+        "default": {
+          "low": 7.35,
+          "high": 7.45
+        }
+      },
+      "critical": {
+        "low": 7.2,
+        "high": 7.55
+      },
+      "panel": "blood_gas"
+    },
+    "pco2": {
+      "ru": "pCO₂",
+      "en": "pCO2",
+      "names": [
+        "pco2",
+        "paco2",
+        "pco₂",
+        "рсо2",
+        "парциальное давление co2"
+      ],
+      "canonical_unit": "mmHg",
+      "units_accepted": {
+        "mmhg": 1,
+        "мм рт ст": 1,
+        "ммртст": 1,
+        "mm hg": 1,
+        "kpa": 7.5006,
+        "кпа": 7.5006
+      },
+      "ranges": {
+        "default": {
+          "low": 35,
+          "high": 45
+        }
+      },
+      "critical": {
+        "low": 20,
+        "high": 70
+      },
+      "panel": "blood_gas"
+    },
+    "po2": {
+      "ru": "pO₂",
+      "en": "pO2",
+      "names": [
+        "po2",
+        "pao2",
+        "po₂",
+        "ро2",
+        "парциальное давление o2"
+      ],
+      "canonical_unit": "mmHg",
+      "units_accepted": {
+        "mmhg": 1,
+        "мм рт ст": 1,
+        "ммртст": 1,
+        "mm hg": 1,
+        "kpa": 7.5006,
+        "кпа": 7.5006
+      },
+      "ranges": {
+        "default": {
+          "low": 80,
+          "high": 100
+        }
+      },
+      "critical": {
+        "low": 60,
+        "high": null
+      },
+      "panel": "blood_gas"
+    },
+    "base_excess": {
+      "ru": "Избыток оснований (BE)",
+      "en": "Base excess",
+      "names": [
+        "base excess",
+        "be",
+        "избыток оснований",
+        "дефицит оснований",
+        "sbe",
+        "abe"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "meq/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": -2,
+          "high": 2
+        }
+      },
+      "critical": null,
+      "panel": "blood_gas"
+    },
+    "lactate": {
+      "ru": "Лактат",
+      "en": "Lactate",
+      "names": [
+        "lactate",
+        "lactic acid",
+        "лактат",
+        "молочная кислота"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.111,
+        "мг/дл": 0.111
+      },
+      "ranges": {
+        "default": {
+          "low": 0.5,
+          "high": 2.2
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 4.0
+      },
+      "panel": "blood_gas",
+      "_note": "Лактат >4 ммоль/л — тканевая гипоперфузия/шок; маркёр тяжести."
+    },
+    "o2_sat": {
+      "ru": "Сатурация O₂ (SaO₂)",
+      "en": "O2 saturation",
+      "names": [
+        "sao2",
+        "o2 sat",
+        "spo2",
+        "oxygen saturation",
+        "сатурация",
+        "сатурация o2",
+        "sat o2"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 95,
+          "high": 100
+        }
+      },
+      "critical": {
+        "low": 90,
+        "high": null
+      },
+      "panel": "blood_gas"
+    },
+    "psa_total": {
+      "ru": "ПСА общий",
+      "en": "PSA total",
+      "names": [
+        "psa",
+        "psa total",
+        "total psa",
+        "пса",
+        "пса общий",
+        "простатспецифический антиген"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 4.0
+        }
+      },
+      "age_ranges": [
+        {
+          "label": "40–49",
+          "min": 40,
+          "max": 50,
+          "low": 0,
+          "high": 2.5
+        },
+        {
+          "label": "50–59",
+          "min": 50,
+          "max": 60,
+          "low": 0,
+          "high": 3.5
+        },
+        {
+          "label": "60–69",
+          "min": 60,
+          "max": 70,
+          "low": 0,
+          "high": 4.5
+        },
+        {
+          "label": "70+",
+          "min": 70,
+          "max": 120,
+          "low": 0,
+          "high": 6.5
+        }
+      ],
+      "critical": null,
+      "panel": "tumor_markers",
+      "_note": "Возрастные пороги. Повышение неспецифично (простатит, ДГПЖ, после ТРУЗИ/езды). У женщин неинформативен. Динамика и свободный/общий важнее одного значения."
+    },
+    "psa_free_ratio": {
+      "ru": "Свободный/общий ПСА",
+      "en": "Free/total PSA ratio",
+      "names": [
+        "free psa ratio",
+        "psa ratio",
+        "свободный пса",
+        "соотношение пса",
+        "f/t psa",
+        "free/total psa"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 25,
+          "high": 100
+        }
+      },
+      "direction": "higher_better",
+      "critical": null,
+      "panel": "tumor_markers",
+      "_note": "При общем ПСА 4–10: отношение >25% — чаще доброкачественно, <15% — выше риск рака простаты."
+    },
+    "cea": {
+      "ru": "РЭА (раково-эмбриональный антиген)",
+      "en": "CEA",
+      "names": [
+        "cea",
+        "рэа",
+        "раково-эмбриональный антиген",
+        "carcinoembryonic antigen"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 5.0
+        }
+      },
+      "critical": null,
+      "panel": "tumor_markers",
+      "_note": "У курильщиков порог выше (~<5–10). Неспецифичен; для мониторинга, не скрининга."
+    },
+    "ca125": {
+      "ru": "CA 125",
+      "en": "CA 125",
+      "names": [
+        "ca 125",
+        "ca125",
+        "са 125",
+        "са125",
+        "cancer antigen 125"
+      ],
+      "canonical_unit": "U/mL",
+      "units_accepted": {
+        "u/ml": 1,
+        "ед/мл": 1,
+        "kiu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 35
+        }
+      },
+      "critical": null,
+      "panel": "tumor_markers",
+      "_note": "Повышен при раке яичников, но и при эндометриозе, воспалении, менструации, беременности, асците."
+    },
+    "ca19_9": {
+      "ru": "CA 19-9",
+      "en": "CA 19-9",
+      "names": [
+        "ca 19-9",
+        "ca19-9",
+        "ca199",
+        "са 19-9",
+        "са19-9",
+        "cancer antigen 19-9"
+      ],
+      "canonical_unit": "U/mL",
+      "units_accepted": {
+        "u/ml": 1,
+        "ед/мл": 1,
+        "kiu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 37
+        }
+      },
+      "critical": null,
+      "panel": "tumor_markers",
+      "_note": "Поджелудочная/ЖКТ; ложно повышен при холестазе/панкреатите. У Lewis-негативных не вырабатывается."
+    },
+    "ca15_3": {
+      "ru": "CA 15-3",
+      "en": "CA 15-3",
+      "names": [
+        "ca 15-3",
+        "ca15-3",
+        "ca153",
+        "са 15-3",
+        "са15-3"
+      ],
+      "canonical_unit": "U/mL",
+      "units_accepted": {
+        "u/ml": 1,
+        "ед/мл": 1,
+        "kiu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 30
+        }
+      },
+      "critical": null,
+      "panel": "tumor_markers",
+      "_note": "Молочная железа — для мониторинга, не скрининга."
+    },
+    "afp": {
+      "ru": "АФП (альфа-фетопротеин)",
+      "en": "AFP",
+      "names": [
+        "afp",
+        "афп",
+        "альфа-фетопротеин",
+        "alpha-fetoprotein"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "iu/ml": 1.21,
+        "ме/мл": 1.21
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 10
+        }
+      },
+      "critical": null,
+      "panel": "tumor_markers",
+      "_note": "Гепатоцеллюлярный рак, герминогенные опухоли. При беременности физиологически высок — не оценивать по этому порогу."
+    },
+    "hcg_total": {
+      "ru": "ХГЧ общий (β-ХГЧ)",
+      "en": "hCG total",
+      "names": [
+        "hcg",
+        "beta hcg",
+        "b-hcg",
+        "хгч",
+        "бета-хгч",
+        "б-хгч",
+        "total hcg"
+      ],
+      "canonical_unit": "mIU/mL",
+      "units_accepted": {
+        "miu/ml": 1,
+        "ме/л": 1,
+        "iu/l": 1,
+        "мме/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 5
+        }
+      },
+      "critical": null,
+      "panel": "tumor_markers",
+      "_note": "Порог для небеременных. При беременности растёт экспоненциально; как онкомаркер — герминогенные/трофобластические опухоли."
+    },
+    "rf": {
+      "ru": "Ревматоидный фактор (РФ)",
+      "en": "Rheumatoid factor",
+      "names": [
+        "rf",
+        "rheumatoid factor",
+        "ревматоидный фактор",
+        "рф",
+        "czynnik reumatoidalny"
+      ],
+      "canonical_unit": "IU/mL",
+      "units_accepted": {
+        "iu/ml": 1,
+        "ме/мл": 1,
+        "u/ml": 1,
+        "ед/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 14
+        }
+      },
+      "critical": null,
+      "panel": "immunology",
+      "_note": "Положителен при РА, но и при инфекциях, Шёгрене, у здоровых пожилых. Не специфичен.",
+      "pos_cutoff": 14.0
+    },
+    "accp": {
+      "ru": "АЦЦП (анти-CCP)",
+      "en": "Anti-CCP",
+      "names": [
+        "anti-ccp",
+        "accp",
+        "аццп",
+        "anti ccp",
+        "антитела к цитруллинированному пептиду",
+        "acpa",
+        "anty-ccp",
+        "przeciwciała anty-ccp"
+      ],
+      "canonical_unit": "U/mL",
+      "units_accepted": {
+        "u/ml": 1,
+        "ед/мл": 1,
+        "ru/ml": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 17
+        }
+      },
+      "critical": null,
+      "panel": "immunology",
+      "_note": "Высокоспецифичен для ревматоидного артрита; порог метод-зависим (часто <17 или <20).",
+      "pos_cutoff": 17.0
+    },
+    "ana": {
+      "ru": "Антинуклеарные антитела (АНА)",
+      "en": "ANA",
+      "names": [
+        "ana",
+        "ана",
+        "антинуклеарные антитела",
+        "antinuclear antibodies",
+        "ана-скрин",
+        "przeciwciała przeciwjądrowe"
+      ],
+      "qualitative": true,
+      "panel": "immunology",
+      "notes": [
+        "Положительный результат оценивай по титру и типу свечения; низкие титры бывают у здоровых. Скрининг СЗСТ (СКВ и др.)."
+      ]
+    },
+    "c3": {
+      "ru": "Комплемент C3",
+      "en": "Complement C3",
+      "names": [
+        "c3",
+        "complement c3",
+        "комплемент c3",
+        "с3"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.9,
+          "high": 1.8
+        }
+      },
+      "critical": null,
+      "panel": "immunology",
+      "_note": "Снижение — активация комплемента (СКВ-активность, ГН, иммунокомплексные болезни)."
+    },
+    "c4": {
+      "ru": "Комплемент C4",
+      "en": "Complement C4",
+      "names": [
+        "c4",
+        "complement c4",
+        "комплемент c4",
+        "с4"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.1,
+          "high": 0.4
+        }
+      },
+      "critical": null,
+      "panel": "immunology"
+    },
+    "igg": {
+      "ru": "Иммуноглобулин G (IgG)",
+      "en": "IgG",
+      "names": [
+        "igg",
+        "immunoglobulin g",
+        "иммуноглобулин g",
+        "иммуноглобулин джи",
+        "immunoglobulina g"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 7.0,
+          "high": 16.0
+        }
+      },
+      "critical": null,
+      "panel": "immunology"
+    },
+    "iga": {
+      "ru": "Иммуноглобулин A (IgA)",
+      "en": "IgA",
+      "names": [
+        "iga",
+        "immunoglobulin a",
+        "иммуноглобулин a",
+        "иммуноглобулин а",
+        "immunoglobulina a"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.7,
+          "high": 4.0
+        }
+      },
+      "critical": null,
+      "panel": "immunology"
+    },
+    "igm": {
+      "ru": "Иммуноглобулин M (IgM)",
+      "en": "IgM",
+      "names": [
+        "igm",
+        "immunoglobulin m",
+        "иммуноглобулин m",
+        "иммуноглобулин эм",
+        "immunoglobulina m"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.4,
+          "high": 2.3
+        }
+      },
+      "critical": null,
+      "panel": "immunology"
+    },
+    "ige_total": {
+      "ru": "Иммуноглобулин E общий (IgE)",
+      "en": "IgE total",
+      "names": [
+        "ige",
+        "immunoglobulin e",
+        "иммуноглобулин e",
+        "ige общий",
+        "общий ige",
+        "ige całkowite",
+        "ige calkowite"
+      ],
+      "canonical_unit": "IU/mL",
+      "units_accepted": {
+        "iu/ml": 1,
+        "ме/мл": 1,
+        "ku/l": 1,
+        "ке/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 100
+        }
+      },
+      "critical": null,
+      "panel": "immunology",
+      "_note": "Повышен при атопии, паразитозах; норма зависит от возраста (у детей ниже)."
+    },
+    "aslo": {
+      "ru": "АСЛО (антистрептолизин-О)",
+      "en": "ASO",
+      "names": [
+        "aslo",
+        "aso",
+        "асло",
+        "антистрептолизин",
+        "anti-streptolysin o"
+      ],
+      "canonical_unit": "IU/mL",
+      "units_accepted": {
+        "iu/ml": 1,
+        "ме/мл": 1,
+        "u/ml": 1,
+        "ед/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 200
+        }
+      },
+      "critical": null,
+      "panel": "immunology",
+      "_note": "Маркёр перенесённой стрептококковой инфекции; оценивай в динамике.",
+      "pos_cutoff": 200.0
+    },
+    "pth": {
+      "ru": "Паратгормон (ПТГ)",
+      "en": "PTH",
+      "names": [
+        "pth",
+        "parathyroid hormone",
+        "паратгормон",
+        "птг",
+        "интактный птг",
+        "parathormon"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1,
+        "ng/l": 1,
+        "pmol/l": 9.43,
+        "пмоль/л": 9.43
+      },
+      "ranges": {
+        "default": {
+          "low": 15,
+          "high": 65
+        }
+      },
+      "critical": null,
+      "panel": "bone",
+      "_note": "Интерпретируй ВМЕСТЕ с кальцием: ↑ПТГ+↑Ca — первичный гиперпаратиреоз; ↑ПТГ+↓Ca — вторичный (дефицит D/ХБП)."
+    },
+    "osteocalcin": {
+      "ru": "Остеокальцин",
+      "en": "Osteocalcin",
+      "names": [
+        "osteocalcin",
+        "остеокальцин",
+        "bone gla protein"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 11,
+          "high": 43
+        }
+      },
+      "critical": null,
+      "panel": "bone",
+      "_note": "Маркёр костеобразования; повышен при высоком костном обмене."
+    },
+    "bone_alp": {
+      "ru": "Костная щелочная фосфатаза",
+      "en": "Bone ALP",
+      "names": [
+        "bone alp",
+        "bone-specific alkaline phosphatase",
+        "костная щелочная фосфатаза",
+        "костная щф",
+        "bsap",
+        "остаза"
+      ],
+      "canonical_unit": "ug/L",
+      "units_accepted": {
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 6,
+          "high": 30
+        },
+        "female": {
+          "low": 5,
+          "high": 22
+        },
+        "default": {
+          "low": 5,
+          "high": 30
+        }
+      },
+      "critical": null,
+      "panel": "bone",
+      "_note": "Специфичнее общей ЩФ для костного обмена; растёт при болезни Педжета, остеомаляции, метастазах в кости."
+    },
+    "ctx": {
+      "ru": "β-CrossLaps (CTX)",
+      "en": "Beta-CrossLaps / CTX",
+      "names": [
+        "ctx",
+        "beta-crosslaps",
+        "b-crosslaps",
+        "кросслапс",
+        "ctx-1",
+        "c-терминальный телопептид"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "pg/ml": 0.001,
+        "пг/мл": 0.001
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 0.6
+        }
+      },
+      "critical": null,
+      "panel": "bone",
+      "_note": "Маркёр костной резорбции; снижается на антирезорбтивной терапии (мониторинг)."
+    },
+    "hbsag": {
+      "ru": "HBsAg (поверхностный антиген HBV)",
+      "en": "HBsAg",
+      "names": [
+        "hbsag",
+        "hbs ag",
+        "hbs-ag",
+        "поверхностный антиген гепатита b",
+        "австралийский антиген",
+        "hbsантиген",
+        "antygen hbs",
+        "antygen hbs wirusa"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Реактивный — текущая HBV-инфекция (острая/хроническая); подтверждай дополнительными маркёрами и ПЦР."
+      ]
+    },
+    "anti_hbc": {
+      "ru": "Anti-HBc (антитела к core HBV)",
+      "en": "Anti-HBc",
+      "names": [
+        "anti-hbc",
+        "antihbc",
+        "anti hbc",
+        "антитела к hbcag",
+        "hbcab",
+        "анти-hbc"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Маркёр контакта с HBV (перенесённая/текущая). IgM anti-HBc — острая инфекция."
+      ]
+    },
+    "hbeag": {
+      "ru": "HBeAg",
+      "en": "HBeAg",
+      "names": [
+        "hbeag",
+        "hbe ag",
+        "hbe-антиген",
+        "е-антиген гепатита b"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Реактивный — высокая репликация/заразность при хроническом гепатите B."
+      ]
+    },
+    "anti_hcv": {
+      "ru": "Anti-HCV (антитела к HCV)",
+      "en": "Anti-HCV",
+      "names": [
+        "anti-hcv",
+        "antihcv",
+        "anti hcv",
+        "антитела к гепатиту c",
+        "hcv ab",
+        "анти-hcv",
+        "przeciwciała anty hcv",
+        "anty-hcv",
+        "anty hcv"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Реактивный — контакт с HCV; текущую инфекцию подтверждает только HCV RNA (ПЦР)."
+      ]
+    },
+    "hiv_agab": {
+      "ru": "ВИЧ (Ag/Ab combo)",
+      "en": "HIV Ag/Ab",
+      "names": [
+        "hiv",
+        "вич",
+        "hiv ag/ab",
+        "hiv 1/2",
+        "вич 1/2",
+        "анти-вич",
+        "hiv antibody",
+        "hiv ag/ab (combo)",
+        "wirus hiv"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Реактивный скрининг требует подтверждающего теста (иммуноблот/ПЦР). Окно серонегативности возможно."
+      ]
+    },
+    "syphilis_treponemal": {
+      "ru": "Сифилис — трепонемный тест (TPHA/суммарные АТ)",
+      "en": "Treponemal test",
+      "names": [
+        "tpha",
+        "tppa",
+        "трепонемный тест",
+        "суммарные антитела к бледной трепонеме",
+        "anti-treponema",
+        "сифилис суммарные",
+        "rpr/tpha",
+        "трепонема",
+        "wr (anty tp)",
+        "kiła",
+        "treponema pallidum",
+        "anty tp",
+        "vdrl",
+        "rpr"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Реактивный — текущий или перенесённый сифилис (остаётся положительным после лечения). Активность оценивают нетрепонемным титром (RPR/VDRL)."
+      ]
+    },
+    "syphilis_rpr": {
+      "ru": "Сифилис — RPR/VDRL (нетрепонемный)",
+      "en": "RPR/VDRL",
+      "names": [
+        "rpr",
+        "vdrl",
+        "рмп",
+        "нетрепонемный тест",
+        "реакция микропреципитации"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Реактивный — активная инфекция; титр отражает активность и падает при лечении. Возможны ложноположительные."
+      ]
+    },
+    "anti_hbs": {
+      "ru": "Anti-HBs (защитные АТ к HBV)",
+      "en": "Anti-HBs",
+      "names": [
+        "anti-hbs",
+        "antihbs",
+        "anti hbs",
+        "защитные антитела к гепатиту b",
+        "hbsab",
+        "анти-hbs",
+        "anty-hbs",
+        "przeciwciała anty-hbs"
+      ],
+      "canonical_unit": "IU/L",
+      "units_accepted": {
+        "iu/l": 1,
+        "ме/л": 1,
+        "miu/ml": 1,
+        "мме/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 10,
+          "high": 1000
+        }
+      },
+      "direction": "higher_better",
+      "critical": null,
+      "panel": "serology",
+      "_note": "≥10 МЕ/л — защитный поствакцинальный/постинфекционный уровень; <10 — защиты нет."
+    },
+    "hbv_dna": {
+      "ru": "HBV DNA (вирусная нагрузка)",
+      "en": "HBV DNA",
+      "names": [
+        "hbv dna",
+        "днк hbv",
+        "вирусная нагрузка hbv",
+        "днк вируса гепатита b"
+      ],
+      "canonical_unit": "IU/mL",
+      "units_accepted": {
+        "iu/ml": 1,
+        "ме/мл": 1,
+        "copies/ml": 0.17,
+        "копий/мл": 0.17
+      },
+      "ranges": {},
+      "critical": null,
+      "panel": "serology",
+      "_note": "Количественно оценивает репликацию; интерпретируй по порогам терапии, а не по фикс. норме (шкала логарифмическая)."
+    },
+    "hcv_rna": {
+      "ru": "HCV RNA (вирусная нагрузка)",
+      "en": "HCV RNA",
+      "names": [
+        "hcv rna",
+        "рнк hcv",
+        "вирусная нагрузка hcv",
+        "рнк вируса гепатита c"
+      ],
+      "canonical_unit": "IU/mL",
+      "units_accepted": {
+        "iu/ml": 1,
+        "ме/мл": 1
+      },
+      "ranges": {},
+      "critical": null,
+      "panel": "serology",
+      "_note": "Подтверждает активную HCV-инфекцию; используется для решения о терапии и контроля ответа."
+    },
+    "spep_albumin_pct": {
+      "ru": "Альбумин (фракция, %)",
+      "en": "Albumin fraction",
+      "names": [
+        "albumin fraction",
+        "альбумин фракция",
+        "альбумин %",
+        "spep albumin"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 55,
+          "high": 65
+        }
+      },
+      "critical": null,
+      "panel": "protein_electrophoresis"
+    },
+    "spep_alpha1": {
+      "ru": "α1-глобулины",
+      "en": "Alpha-1 globulin",
+      "names": [
+        "alpha 1",
+        "alpha-1 globulin",
+        "альфа-1",
+        "альфа1",
+        "a1 глобулины",
+        "α1"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 2,
+          "high": 5
+        }
+      },
+      "critical": null,
+      "panel": "protein_electrophoresis"
+    },
+    "spep_alpha2": {
+      "ru": "α2-глобулины",
+      "en": "Alpha-2 globulin",
+      "names": [
+        "alpha 2",
+        "alpha-2 globulin",
+        "альфа-2",
+        "альфа2",
+        "a2 глобулины",
+        "α2"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 7,
+          "high": 13
+        }
+      },
+      "critical": null,
+      "panel": "protein_electrophoresis"
+    },
+    "spep_beta": {
+      "ru": "β-глобулины",
+      "en": "Beta globulin",
+      "names": [
+        "beta globulin",
+        "бета-глобулины",
+        "бета глобулины",
+        "β-глобулины"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 8,
+          "high": 14
+        }
+      },
+      "critical": null,
+      "panel": "protein_electrophoresis"
+    },
+    "spep_gamma": {
+      "ru": "γ-глобулины",
+      "en": "Gamma globulin",
+      "names": [
+        "gamma globulin",
+        "гамма-глобулины",
+        "гамма глобулины",
+        "γ-глобулины"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 11,
+          "high": 22
+        }
+      },
+      "critical": null,
+      "panel": "protein_electrophoresis",
+      "_note": "Диффузное повышение — поликлональная гаммапатия (воспаление/инфекция); узкий пик — моноклональная (см. M-градиент)."
+    },
+    "m_protein": {
+      "ru": "M-градиент (парапротеин)",
+      "en": "M-protein",
+      "names": [
+        "m-protein",
+        "m protein",
+        "m-градиент",
+        "м-градиент",
+        "парапротеин",
+        "моноклональный компонент",
+        "m-spike"
+      ],
+      "qualitative": true,
+      "panel": "protein_electrophoresis",
+      "notes": [
+        "Обнаружение — моноклональная гаммапатия (MGUS/миелома/лимфопролиферация); нужна иммунофиксация и свободные лёгкие цепи."
+      ]
+    },
+    "free_kappa": {
+      "ru": "Свободные лёгкие цепи κ (каппа)",
+      "en": "Free kappa light chains",
+      "names": [
+        "free kappa",
+        "свободные каппа",
+        "flc kappa",
+        "каппа цепи",
+        "свободная каппа"
+      ],
+      "canonical_unit": "mg/L",
+      "units_accepted": {
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 3.3,
+          "high": 19.4
+        }
+      },
+      "critical": null,
+      "panel": "protein_electrophoresis"
+    },
+    "free_lambda": {
+      "ru": "Свободные лёгкие цепи λ (лямбда)",
+      "en": "Free lambda light chains",
+      "names": [
+        "free lambda",
+        "свободные лямбда",
+        "flc lambda",
+        "лямбда цепи",
+        "свободная лямбда"
+      ],
+      "canonical_unit": "mg/L",
+      "units_accepted": {
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 5.7,
+          "high": 26.3
+        }
+      },
+      "critical": null,
+      "panel": "protein_electrophoresis"
+    },
+    "kappa_lambda_ratio": {
+      "ru": "Соотношение κ/λ (свободные цепи)",
+      "en": "Kappa/lambda ratio",
+      "names": [
+        "kappa lambda ratio",
+        "каппа/лямбда",
+        "соотношение каппа лямбда",
+        "flc ratio",
+        "k/l ratio"
+      ],
+      "canonical_unit": "",
+      "units_accepted": {},
+      "ranges": {
+        "default": {
+          "low": 0.26,
+          "high": 1.65
+        }
+      },
+      "critical": null,
+      "panel": "protein_electrophoresis",
+      "_note": "Вне диапазона — моноклональная продукция лёгких цепей (миелома, AL-амилоидоз); при ХБП диапазон сдвинут (0.37–3.1)."
+    },
+    "reticulocytes_pct": {
+      "ru": "Ретикулоциты %",
+      "en": "Reticulocytes %",
+      "names": [
+        "reticulocytes",
+        "retic",
+        "ретикулоциты",
+        "ретикулоциты %",
+        "ретик",
+        "retikulocyty %",
+        "retikulocyty"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "promille": 0.1,
+        "‰": 0.1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.5,
+          "high": 2.5
+        }
+      },
+      "critical": null,
+      "panel": "cbc",
+      "_note": "Оценивай вместе с ретикулоцитарным индексом (RPI): при анемии % ретикулоцитов завышает истинный ответ."
+    },
+    "reticulocytes_abs": {
+      "ru": "Ретикулоциты абс.",
+      "en": "Reticulocytes abs",
+      "names": [
+        "reticulocytes abs",
+        "retic abs",
+        "ретикулоциты абс",
+        "абсолютные ретикулоциты"
+      ],
+      "canonical_unit": "10^9/L",
+      "units_accepted": {
+        "10^9/l": 1,
+        "10^3/ul": 1,
+        "тыс/мкл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 25,
+          "high": 75
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "haptoglobin": {
+      "ru": "Гаптоглобин",
+      "en": "Haptoglobin",
+      "names": [
+        "haptoglobin",
+        "гаптоглобин",
+        "haptoglobina"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.3,
+          "high": 2.0
+        }
+      },
+      "critical": null,
+      "panel": "cbc",
+      "_note": "Снижение — внутрисосудистый гемолиз (связывает свободный Hb). Острофазовый белок: при воспалении может быть ложно нормальным."
+    },
+    "metanephrine_plasma": {
+      "ru": "Метанефрин свободный (плазма)",
+      "en": "Free metanephrine, plasma",
+      "names": [
+        "metanephrine",
+        "metanephrine plasma",
+        "метанефрин",
+        "свободный метанефрин",
+        "метанефрин плазмы"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1,
+        "nmol/l": 197.2,
+        "нмоль/л": 197.2,
+        "pmol/l": 0.1972
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 90
+        }
+      },
+      "critical": null,
+      "panel": "catecholamines",
+      "_note": "Свободные метанефрины плазмы — тест выбора при феохромоцитоме/параганглиоме. Стресс, кофеин, ряд лекарств завышают."
+    },
+    "normetanephrine_plasma": {
+      "ru": "Норметанефрин свободный (плазма)",
+      "en": "Free normetanephrine, plasma",
+      "names": [
+        "normetanephrine",
+        "normetanephrine plasma",
+        "норметанефрин",
+        "свободный норметанефрин"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1,
+        "nmol/l": 183.2,
+        "нмоль/л": 183.2,
+        "pmol/l": 0.1832
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 180
+        }
+      },
+      "critical": null,
+      "panel": "catecholamines"
+    },
+    "epinephrine": {
+      "ru": "Адреналин (плазма)",
+      "en": "Epinephrine",
+      "names": [
+        "epinephrine",
+        "adrenaline",
+        "адреналин",
+        "эпинефрин"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1,
+        "pmol/l": 0.1832,
+        "пмоль/л": 0.1832
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 84
+        }
+      },
+      "critical": null,
+      "panel": "catecholamines",
+      "_note": "Положение тела/стресс сильно влияют; забор в покое лёжа."
+    },
+    "norepinephrine": {
+      "ru": "Норадреналин (плазма)",
+      "en": "Norepinephrine",
+      "names": [
+        "norepinephrine",
+        "noradrenaline",
+        "норадреналин",
+        "норэпинефрин"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1,
+        "pmol/l": 0.169,
+        "пмоль/л": 0.169
+      },
+      "ranges": {
+        "default": {
+          "low": 70,
+          "high": 750
+        }
+      },
+      "critical": null,
+      "panel": "catecholamines",
+      "_note": "Широкий диапазон, зависит от положения тела и стресса."
+    },
+    "dopamine": {
+      "ru": "Дофамин (плазма)",
+      "en": "Dopamine",
+      "names": [
+        "dopamine",
+        "дофамин",
+        "допамин"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1,
+        "pmol/l": 0.153,
+        "пмоль/л": 0.153
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 30
+        }
+      },
+      "critical": null,
+      "panel": "catecholamines"
+    },
+    "chromogranin_a": {
+      "ru": "Хромогранин А",
+      "en": "Chromogranin A",
+      "names": [
+        "chromogranin a",
+        "chromogranin",
+        "хромогранин а",
+        "хромогранин"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 100
+        }
+      },
+      "critical": null,
+      "panel": "catecholamines",
+      "_note": "Маркёр нейроэндокринных опухолей; ИПП и почечная недостаточность завышают — метод-зависим."
+    },
+    "vma_urine": {
+      "ru": "Ванилилминдальная кислота (моча, сут)",
+      "en": "VMA urine",
+      "names": [
+        "vma",
+        "ванилилминдальная кислота",
+        "вмк",
+        "vanillylmandelic acid"
+      ],
+      "canonical_unit": "mg/day",
+      "units_accepted": {
+        "mg/day": 1,
+        "мг/сут": 1,
+        "мг/24ч": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 6.8
+        }
+      },
+      "critical": null,
+      "panel": "catecholamines",
+      "_note": "Суточная экскреция; менее чувствительна, чем метанефрины плазмы/мочи."
+    },
+    "metanephrine_urine": {
+      "ru": "Метанефрины общие (моча, сут)",
+      "en": "Urine metanephrines",
+      "names": [
+        "urine metanephrines",
+        "метанефрины мочи",
+        "метанефрины суточные",
+        "фракционированные метанефрины мочи"
+      ],
+      "canonical_unit": "ug/day",
+      "units_accepted": {
+        "ug/day": 1,
+        "мкг/сут": 1,
+        "мкг/24ч": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 350
+        }
+      },
+      "critical": null,
+      "panel": "catecholamines"
+    },
+    "factor_ii": {
+      "ru": "Фактор II (протромбин)",
+      "en": "Factor II",
+      "names": [
+        "factor ii",
+        "фактор 2",
+        "фактор ii",
+        "протромбин фактор"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1,
+        "ме/дл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 70,
+          "high": 120
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors"
+    },
+    "factor_v": {
+      "ru": "Фактор V",
+      "en": "Factor V",
+      "names": [
+        "factor v",
+        "фактор 5",
+        "фактор v",
+        "проакцелерин"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 70,
+          "high": 120
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors"
+    },
+    "factor_vii": {
+      "ru": "Фактор VII",
+      "en": "Factor VII",
+      "names": [
+        "factor vii",
+        "фактор 7",
+        "фактор vii",
+        "проконвертин"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 70,
+          "high": 120
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors"
+    },
+    "factor_viii": {
+      "ru": "Фактор VIII",
+      "en": "Factor VIII",
+      "names": [
+        "factor viii",
+        "фактор 8",
+        "фактор viii",
+        "антигемофильный глобулин"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 50,
+          "high": 150
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors",
+      "_note": "Снижение — гемофилия A; повышение — острофазовый ответ/тромбофилия."
+    },
+    "factor_ix": {
+      "ru": "Фактор IX",
+      "en": "Factor IX",
+      "names": [
+        "factor ix",
+        "фактор 9",
+        "фактор ix",
+        "кристмас-фактор"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 50,
+          "high": 150
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors",
+      "_note": "Снижение — гемофилия B."
+    },
+    "factor_x": {
+      "ru": "Фактор X",
+      "en": "Factor X",
+      "names": [
+        "factor x",
+        "фактор 10",
+        "фактор x",
+        "фактор стюарта-прауэра"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 70,
+          "high": 120
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors"
+    },
+    "factor_xi": {
+      "ru": "Фактор XI",
+      "en": "Factor XI",
+      "names": [
+        "factor xi",
+        "фактор 11",
+        "фактор xi"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 65,
+          "high": 150
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors"
+    },
+    "factor_xii": {
+      "ru": "Фактор XII",
+      "en": "Factor XII",
+      "names": [
+        "factor xii",
+        "фактор 12",
+        "фактор xii",
+        "фактор хагемана"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 50,
+          "high": 150
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors"
+    },
+    "vwf": {
+      "ru": "Фактор Виллебранда",
+      "en": "von Willebrand factor",
+      "names": [
+        "vwf",
+        "von willebrand",
+        "фактор виллебранда",
+        "vwf:ag"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 50,
+          "high": 160
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors",
+      "_note": "Зависит от группы крови (у 0(I) ниже). Снижение — болезнь Виллебранда."
+    },
+    "protein_c": {
+      "ru": "Протеин C",
+      "en": "Protein C",
+      "names": [
+        "protein c",
+        "протеин c",
+        "протеин с"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 70,
+          "high": 140
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors",
+      "_note": "Дефицит — тромбофилия; снижается на варфарине и при дефиците витамина K."
+    },
+    "protein_s": {
+      "ru": "Протеин S",
+      "en": "Protein S",
+      "names": [
+        "protein s",
+        "протеин s",
+        "протеин эс"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1,
+        "iu/dl": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 60,
+          "high": 140
+        }
+      },
+      "critical": null,
+      "panel": "coag_factors"
+    },
+    "lupus_anticoagulant": {
+      "ru": "Волчаночный антикоагулянт",
+      "en": "Lupus anticoagulant",
+      "names": [
+        "lupus anticoagulant",
+        "волчаночный антикоагулянт",
+        "ва",
+        "la"
+      ],
+      "qualitative": true,
+      "panel": "coag_factors",
+      "notes": [
+        "Положительный — антифосфолипидный синдром (риск тромбозов); подтверждают повторно через 12 нед."
+      ]
+    },
+    "glucose_2h": {
+      "ru": "Глюкоза (ГТТ, 2 ч)",
+      "en": "Glucose 2h (OGTT)",
+      "names": [
+        "glucose 2h",
+        "ogtt 2h",
+        "глюкоза через 2 часа",
+        "глюкоза 2ч",
+        "гтт 2ч",
+        "глюкоза после нагрузки",
+        "ппг",
+        "glukoza po 2h",
+        "glukoza 120 min",
+        "ogtt 120"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.0555,
+        "мг/дл": 0.0555
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 7.8
+        }
+      },
+      "critical": null,
+      "panel": "metabolic",
+      "_note": "ГТТ 2ч: <7.8 норма, 7.8–11.0 нарушенная толерантность, ≥11.1 — критерий диабета."
+    },
+    "c_peptide": {
+      "ru": "С-пептид",
+      "en": "C-peptide",
+      "names": [
+        "c-peptide",
+        "c peptide",
+        "с-пептид",
+        "с пептид"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "nmol/l": 3.021,
+        "нмоль/л": 3.021,
+        "pmol/l": 0.003021,
+        "пмоль/л": 0.003021
+      },
+      "ranges": {
+        "default": {
+          "low": 1.1,
+          "high": 4.4
+        }
+      },
+      "critical": null,
+      "panel": "metabolic",
+      "_note": "Отражает собственную секрецию инсулина; низкий при СД1/инсулинодефиците, высокий при ИР/инсулиноме."
+    },
+    "fructosamine": {
+      "ru": "Фруктозамин",
+      "en": "Fructosamine",
+      "names": [
+        "fructosamine",
+        "фруктозамин"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 200,
+          "high": 285
+        }
+      },
+      "critical": null,
+      "panel": "metabolic",
+      "_note": "Средняя гликемия за 2–3 недели; альтернатива HbA1c при гемоглобинопатиях/быстрой динамике."
+    },
+    "lipoprotein_a": {
+      "ru": "Липопротеин(а), Lp(a)",
+      "en": "Lipoprotein(a)",
+      "names": [
+        "lipoprotein a",
+        "lp(a)",
+        "lpa",
+        "липопротеин а",
+        "липопротеин(а)",
+        "lipoproteina a"
+      ],
+      "canonical_unit": "mg/dL",
+      "units_accepted": {
+        "mg/dl": 1,
+        "мг/дл": 1,
+        "nmol/l": 0.4651,
+        "нмоль/л": 0.4651
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 30
+        }
+      },
+      "critical": null,
+      "panel": "lipid",
+      "_note": "Генетически детерминирован; >30 мг/дл (>75 нмоль/л) — независимый фактор ССЗ-риска. Единицы массы и количества не взаимозаменяемы напрямую."
+    },
+    "apo_a1": {
+      "ru": "Аполипопротеин A1",
+      "en": "Apolipoprotein A1",
+      "names": [
+        "apo a1",
+        "apoa1",
+        "apolipoprotein a1",
+        "аполипопротеин a1",
+        "апо a1",
+        "apolipoproteina a1"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "male": {
+          "low": 1.0,
+          "high": 1.6
+        },
+        "female": {
+          "low": 1.1,
+          "high": 2.0
+        },
+        "default": {
+          "low": 1.0,
+          "high": 2.0
+        }
+      },
+      "direction": "higher_better",
+      "critical": null,
+      "panel": "lipid",
+      "_note": "Основной белок ЛПВП; выше — антиатерогенно."
+    },
+    "apo_b": {
+      "ru": "Аполипопротеин B",
+      "en": "Apolipoprotein B",
+      "names": [
+        "apo b",
+        "apob",
+        "apolipoprotein b",
+        "аполипопротеин b",
+        "апо b",
+        "apolipoproteina b"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.6,
+          "high": 1.3
+        }
+      },
+      "critical": null,
+      "panel": "lipid",
+      "_note": "Число атерогенных частиц; точнее ЛПНП отражает риск. Цель при высоком риске <0.8 г/л."
+    },
+    "zinc": {
+      "ru": "Цинк",
+      "en": "Zinc",
+      "names": [
+        "zinc",
+        "цинк",
+        "zn",
+        "cynk"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "ug/dl": 0.153,
+        "мкг/дл": 0.153
+      },
+      "ranges": {
+        "default": {
+          "low": 11,
+          "high": 18
+        }
+      },
+      "critical": null,
+      "panel": "micronutrients",
+      "_note": "Снижается при воспалении (острофазово), нужно сопоставлять с СРБ/альбумином."
+    },
+    "copper": {
+      "ru": "Медь",
+      "en": "Copper",
+      "names": [
+        "copper",
+        "медь",
+        "cu",
+        "miedź",
+        "miedz"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "ug/dl": 0.157,
+        "мкг/дл": 0.157
+      },
+      "ranges": {
+        "default": {
+          "low": 11,
+          "high": 22
+        }
+      },
+      "critical": null,
+      "panel": "micronutrients",
+      "_note": "Низкая при болезни Вильсона (с ↓церулоплазмина), мальабсорбции; высокая острофазово/при эстрогенах."
+    },
+    "selenium": {
+      "ru": "Селен",
+      "en": "Selenium",
+      "names": [
+        "selenium",
+        "селен",
+        "se"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "ug/l": 0.01266,
+        "мкг/л": 0.01266
+      },
+      "ranges": {
+        "default": {
+          "low": 0.9,
+          "high": 1.7
+        }
+      },
+      "critical": null,
+      "panel": "micronutrients"
+    },
+    "vitamin_b1": {
+      "ru": "Витамин B1 (тиамин)",
+      "en": "Vitamin B1 (thiamine)",
+      "names": [
+        "vitamin b1",
+        "thiamine",
+        "тиамин",
+        "витамин b1",
+        "витамин б1",
+        "тдф"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1,
+        "ug/l": 2.96,
+        "мкг/л": 2.96
+      },
+      "ranges": {
+        "default": {
+          "low": 70,
+          "high": 180
+        }
+      },
+      "critical": null,
+      "panel": "micronutrients",
+      "_note": "Дефицит — бери-бери, энцефалопатия Вернике (алкоголизм); цельная кровь (ТДФ)."
+    },
+    "vitamin_b6": {
+      "ru": "Витамин B6 (пиридоксаль-5-фосфат)",
+      "en": "Vitamin B6 (PLP)",
+      "names": [
+        "vitamin b6",
+        "pyridoxine",
+        "plp",
+        "пиридоксин",
+        "витамин b6",
+        "витамин б6",
+        "пиридоксальфосфат"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1,
+        "ug/l": 4.046,
+        "мкг/л": 4.046
+      },
+      "ranges": {
+        "default": {
+          "low": 20,
+          "high": 120
+        }
+      },
+      "critical": null,
+      "panel": "micronutrients"
+    },
+    "magnesium_rbc": {
+      "ru": "Магний эритроцитарный",
+      "en": "RBC magnesium",
+      "names": [
+        "rbc magnesium",
+        "магний эритроцитарный",
+        "эритроцитарный магний",
+        "магний в эритроцитах",
+        "intracellular magnesium"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 1.65,
+          "high": 2.65
+        }
+      },
+      "critical": null,
+      "panel": "micronutrients",
+      "_note": "Точнее сывороточного магния отражает запасы (сывороточный может быть нормальным при дефиците)."
+    },
+    "vitamin_a": {
+      "ru": "Витамин A (ретинол)",
+      "en": "Vitamin A (retinol)",
+      "names": [
+        "vitamin a",
+        "retinol",
+        "ретинол",
+        "витамин а"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "ug/dl": 0.0349,
+        "мкг/дл": 0.0349
+      },
+      "ranges": {
+        "default": {
+          "low": 1.05,
+          "high": 2.8
+        }
+      },
+      "critical": null,
+      "panel": "micronutrients"
+    },
+    "vitamin_e": {
+      "ru": "Витамин E (токоферол)",
+      "en": "Vitamin E (tocopherol)",
+      "names": [
+        "vitamin e",
+        "tocopherol",
+        "токоферол",
+        "витамин е",
+        "альфа-токоферол"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "mg/l": 2.322,
+        "мг/л": 2.322
+      },
+      "ranges": {
+        "default": {
+          "low": 12,
+          "high": 42
+        }
+      },
+      "critical": null,
+      "panel": "micronutrients"
+    },
+    "anti_tpo": {
+      "ru": "АТ к тиреопероксидазе (анти-ТПО)",
+      "en": "Anti-TPO",
+      "names": [
+        "anti-tpo",
+        "антитела к тпо",
+        "ат-тпо",
+        "анти-тпо",
+        "tpo ab",
+        "атпо",
+        "anty-tpo",
+        "przeciwciała anty-tpo",
+        "atpo",
+        "anty tpo"
+      ],
+      "canonical_unit": "U/mL",
+      "units_accepted": {
+        "u/ml": 1,
+        "iu/ml": 1,
+        "ед/мл": 1,
+        "ме/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 34
+        }
+      },
+      "critical": null,
+      "panel": "autoantibodies",
+      "_note": "Повышены при аутоиммунном тиреоидите (Хашимото), болезни Грейвса.",
+      "pos_cutoff": 34.0
+    },
+    "anti_tg": {
+      "ru": "АТ к тиреоглобулину (анти-ТГ)",
+      "en": "Anti-TG",
+      "names": [
+        "anti-tg",
+        "антитела к тиреоглобулину",
+        "ат-тг",
+        "анти-тг",
+        "tg ab",
+        "anty-tg",
+        "przeciwciała anty-tg",
+        "atg"
+      ],
+      "canonical_unit": "U/mL",
+      "units_accepted": {
+        "u/ml": 1,
+        "iu/ml": 1,
+        "ед/мл": 1,
+        "ме/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 115
+        }
+      },
+      "critical": null,
+      "panel": "autoantibodies",
+      "pos_cutoff": 115.0
+    },
+    "anti_tsh_r": {
+      "ru": "АТ к рецептору ТТГ (TRAb)",
+      "en": "TSH-R Ab",
+      "names": [
+        "anti-tsh-r",
+        "trab",
+        "ат к рецептору ттг",
+        "антитела к рецептору ттг",
+        "рттг",
+        "przeciwciała przeciw receptorowi tsh"
+      ],
+      "canonical_unit": "IU/L",
+      "units_accepted": {
+        "iu/l": 1,
+        "ме/л": 1,
+        "u/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 1.75
+        }
+      },
+      "critical": null,
+      "panel": "autoantibodies",
+      "_note": "Повышены при болезни Грейвса (диффузный токсический зоб)."
+    },
+    "anti_dsdna": {
+      "ru": "Анти-dsDNA (двуспиральная ДНК)",
+      "en": "Anti-dsDNA",
+      "names": [
+        "anti-dsdna",
+        "anti dsdna",
+        "антитела к днк",
+        "анти-днк",
+        "ds-dna",
+        "ат к двуспиральной днк"
+      ],
+      "canonical_unit": "IU/mL",
+      "units_accepted": {
+        "iu/ml": 1,
+        "ме/мл": 1,
+        "u/ml": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 30
+        }
+      },
+      "critical": null,
+      "panel": "autoantibodies",
+      "_note": "Специфичны для СКВ; титр коррелирует с активностью (нефрит).",
+      "pos_cutoff": 30.0
+    },
+    "anti_gad": {
+      "ru": "Анти-GAD (глутаматдекарбоксилаза)",
+      "en": "Anti-GAD",
+      "names": [
+        "anti-gad",
+        "gad ab",
+        "ат к gad",
+        "антитела к глутаматдекарбоксилазе",
+        "анти-гад"
+      ],
+      "canonical_unit": "U/mL",
+      "units_accepted": {
+        "u/ml": 1,
+        "iu/ml": 1,
+        "ед/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 10
+        }
+      },
+      "critical": null,
+      "panel": "autoantibodies",
+      "_note": "Маркёр аутоиммунного диабета (СД1/LADA)."
+    },
+    "ttg_iga": {
+      "ru": "АТ к тканевой трансглутаминазе IgA (tTG)",
+      "en": "tTG IgA",
+      "names": [
+        "ttg iga",
+        "anti-ttg",
+        "ат к тканевой трансглутаминазе",
+        "трансглутаминаза iga",
+        "тттг",
+        "przeciwciała przeciw transglutaminazie tkankowej",
+        "anty-ttg",
+        "anty-tg w kl. iga",
+        "transglutaminaza"
+      ],
+      "canonical_unit": "U/mL",
+      "units_accepted": {
+        "u/ml": 1,
+        "iu/ml": 1,
+        "ед/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 20
+        }
+      },
+      "critical": null,
+      "panel": "autoantibodies",
+      "_note": "Скрининг целиакии; оценивать вместе с общим IgA (при дефиците IgA — ложноотрицательный).",
+      "pos_cutoff": 20.0
+    },
+    "anti_sm": {
+      "ru": "Анти-Sm (Смита)",
+      "en": "Anti-Sm",
+      "names": [
+        "anti-sm",
+        "ат к sm",
+        "анти-смит",
+        "антитела к sm"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "Высокоспецифичны для СКВ."
+      ]
+    },
+    "anti_ssa": {
+      "ru": "Анти-SSA/Ro",
+      "en": "Anti-SSA/Ro",
+      "names": [
+        "anti-ssa",
+        "ssa",
+        "ro",
+        "анти-ssa",
+        "ат к ssa",
+        "анти-ро"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "Синдром Шёгрена, СКВ; риск неонатальной волчанки/блокады сердца плода."
+      ]
+    },
+    "anti_ssb": {
+      "ru": "Анти-SSB/La",
+      "en": "Anti-SSB/La",
+      "names": [
+        "anti-ssb",
+        "ssb",
+        "la",
+        "анти-ssb",
+        "ат к ssb",
+        "анти-ла"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "Синдром Шёгрена."
+      ]
+    },
+    "anti_scl70": {
+      "ru": "Анти-Scl-70",
+      "en": "Anti-Scl-70",
+      "names": [
+        "anti-scl-70",
+        "scl-70",
+        "scl70",
+        "анти-scl-70",
+        "ат к scl-70"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "Системная склеродермия (диффузная форма)."
+      ]
+    },
+    "anti_jo1": {
+      "ru": "Анти-Jo-1",
+      "en": "Anti-Jo-1",
+      "names": [
+        "anti-jo-1",
+        "jo-1",
+        "jo1",
+        "анти-jo-1",
+        "ат к jo-1"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "Поли/дерматомиозит, антисинтетазный синдром."
+      ]
+    },
+    "anti_centromere": {
+      "ru": "Антицентромерные АТ",
+      "en": "Anti-centromere",
+      "names": [
+        "anti-centromere",
+        "aca",
+        "антицентромерные антитела",
+        "ат к центромере",
+        "цента"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "CREST-синдром (лимитированная склеродермия)."
+      ]
+    },
+    "anca": {
+      "ru": "ANCA (антинейтрофильные цитоплазм. АТ)",
+      "en": "ANCA",
+      "names": [
+        "anca",
+        "анца",
+        "антинейтрофильные антитела",
+        "p-anca",
+        "c-anca",
+        "панца",
+        "канца"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "c-ANCA (PR3) — гранулематоз с полиангиитом; p-ANCA (MPO) — микроскопический полиангиит/ЭГПА."
+      ]
+    },
+    "ama": {
+      "ru": "Антимитохондриальные АТ (AMA)",
+      "en": "AMA",
+      "names": [
+        "ama",
+        "antimitochondrial",
+        "антимитохондриальные антитела",
+        "ат к митохондриям",
+        "ama-m2"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "Первичный билиарный холангит (AMA-M2)."
+      ]
+    },
+    "asma": {
+      "ru": "Антитела к гладкой мускулатуре (ASMA)",
+      "en": "ASMA",
+      "names": [
+        "asma",
+        "anti-smooth muscle",
+        "ат к гладкой мускулатуре",
+        "антитела к гладким мышцам",
+        "sma"
+      ],
+      "qualitative": true,
+      "panel": "autoantibodies",
+      "notes": [
+        "Аутоиммунный гепатит 1 типа."
+      ]
+    },
+    "ige_specific": {
+      "ru": "Специфический IgE",
+      "en": "Specific IgE",
+      "names": [
+        "specific ige",
+        "sige",
+        "специфический ige",
+        "спец ige",
+        "аллерген-специфический ige"
+      ],
+      "canonical_unit": "kUA/L",
+      "units_accepted": {
+        "kua/l": 1,
+        "ке/л": 1,
+        "iu/ml": 1,
+        "ме/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 0.35
+        }
+      },
+      "critical": null,
+      "panel": "allergy",
+      "_note": "Класс 0 (<0.35) — норма; классы 1–6 (0.35→>100) — рост сенсибилизации к конкретному аллергену."
+    },
+    "ecp": {
+      "ru": "Эозинофильный катионный белок (ECP)",
+      "en": "ECP",
+      "names": [
+        "ecp",
+        "эозинофильный катионный белок",
+        "эозинофильный катионный протеин"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 24
+        }
+      },
+      "critical": null,
+      "panel": "allergy",
+      "_note": "Маркёр эозинофильного воспаления (астма, атопия)."
+    },
+    "tryptase": {
+      "ru": "Триптаза",
+      "en": "Tryptase",
+      "names": [
+        "tryptase",
+        "триптаза",
+        "mast cell tryptase"
+      ],
+      "canonical_unit": "ug/L",
+      "units_accepted": {
+        "ug/l": 1,
+        "мкг/л": 1,
+        "ng/ml": 1,
+        "нг/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 11.4
+        }
+      },
+      "critical": null,
+      "panel": "allergy",
+      "_note": "Повышение — анафилаксия (в острый период) или мастоцитоз (стойко >20)."
+    },
+    "csf_protein": {
+      "ru": "Белок ликвора",
+      "en": "CSF protein",
+      "names": [
+        "csf protein",
+        "белок ликвора",
+        "белок смж",
+        "белок в ликворе",
+        "протеинорахия"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.15,
+          "high": 0.45
+        }
+      },
+      "critical": null,
+      "panel": "csf",
+      "_note": "Повышение — менингит, Гийена-Барре (белково-клеточная диссоциация), опухоль, кровоизлияние."
+    },
+    "csf_glucose": {
+      "ru": "Глюкоза ликвора",
+      "en": "CSF glucose",
+      "names": [
+        "csf glucose",
+        "глюкоза ликвора",
+        "глюкоза смж",
+        "гликорахия"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.0555,
+        "мг/дл": 0.0555
+      },
+      "ranges": {
+        "default": {
+          "low": 2.2,
+          "high": 3.9
+        }
+      },
+      "critical": null,
+      "panel": "csf",
+      "_note": "Оценивать как отношение к глюкозе крови (норма ≥0.6); ↓ при бактериальном/ТБ/грибковом менингите."
+    },
+    "csf_cells": {
+      "ru": "Цитоз ликвора",
+      "en": "CSF cell count",
+      "names": [
+        "csf cells",
+        "цитоз",
+        "цитоз ликвора",
+        "клетки ликвора",
+        "плеоцитоз",
+        "цитоз смж"
+      ],
+      "canonical_unit": "/uL",
+      "units_accepted": {
+        "/ul": 1,
+        "/мкл": 1,
+        "клеток/мкл": 1,
+        "cells/ul": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 5
+        }
+      },
+      "critical": null,
+      "panel": "csf",
+      "_note": "Нейтрофильный плеоцитоз — бактериальный; лимфоцитарный — вирусный/ТБ менингит."
+    },
+    "csf_lactate": {
+      "ru": "Лактат ликвора",
+      "en": "CSF lactate",
+      "names": [
+        "csf lactate",
+        "лактат ликвора",
+        "лактат смж"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 1.1,
+          "high": 2.4
+        }
+      },
+      "critical": null,
+      "panel": "csf",
+      "_note": ">3.5 ммоль/л — в пользу бактериального менингита."
+    },
+    "digoxin": {
+      "ru": "Дигоксин",
+      "en": "Digoxin",
+      "names": [
+        "digoxin",
+        "дигоксин"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "nmol/l": 0.781,
+        "нмоль/л": 0.781
+      },
+      "ranges": {
+        "default": {
+          "low": 0.8,
+          "high": 2.0
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 2.5
+      },
+      "panel": "drug_monitoring",
+      "_note": "Терапевтическое окно узкое; при СН-целях 0.5–0.9. Токсичность усиливают гипокалиемия/гипомагниемия/ХБП."
+    },
+    "lithium": {
+      "ru": "Литий",
+      "en": "Lithium",
+      "names": [
+        "lithium",
+        "литий",
+        "li"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "meq/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.6,
+          "high": 1.2
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 1.5
+      },
+      "panel": "drug_monitoring",
+      "_note": "Забор через 12 ч после дозы. >1.5 — токсичность (тремор, атаксия, спутанность)."
+    },
+    "valproate": {
+      "ru": "Вальпроевая кислота",
+      "en": "Valproate",
+      "names": [
+        "valproate",
+        "valproic acid",
+        "вальпроат",
+        "вальпроевая кислота",
+        "депакин"
+      ],
+      "canonical_unit": "ug/mL",
+      "units_accepted": {
+        "ug/ml": 1,
+        "мкг/мл": 1,
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 50,
+          "high": 100
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 150
+      },
+      "panel": "drug_monitoring"
+    },
+    "carbamazepine": {
+      "ru": "Карбамазепин",
+      "en": "Carbamazepine",
+      "names": [
+        "carbamazepine",
+        "карбамазепин",
+        "финлепсин",
+        "тегретол"
+      ],
+      "canonical_unit": "ug/mL",
+      "units_accepted": {
+        "ug/ml": 1,
+        "мкг/мл": 1,
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 4,
+          "high": 12
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 15
+      },
+      "panel": "drug_monitoring"
+    },
+    "phenytoin": {
+      "ru": "Фенитоин",
+      "en": "Phenytoin",
+      "names": [
+        "phenytoin",
+        "фенитоин",
+        "дифенин"
+      ],
+      "canonical_unit": "ug/mL",
+      "units_accepted": {
+        "ug/ml": 1,
+        "мкг/мл": 1,
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 10,
+          "high": 20
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 30
+      },
+      "panel": "drug_monitoring",
+      "_note": "Коррекция на альбумин при гипоальбуминемии (свободная фракция выше)."
+    },
+    "phenobarbital": {
+      "ru": "Фенобарбитал",
+      "en": "Phenobarbital",
+      "names": [
+        "phenobarbital",
+        "фенобарбитал"
+      ],
+      "canonical_unit": "ug/mL",
+      "units_accepted": {
+        "ug/ml": 1,
+        "мкг/мл": 1,
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 15,
+          "high": 40
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 50
+      },
+      "panel": "drug_monitoring"
+    },
+    "theophylline": {
+      "ru": "Теофиллин",
+      "en": "Theophylline",
+      "names": [
+        "theophylline",
+        "теофиллин"
+      ],
+      "canonical_unit": "ug/mL",
+      "units_accepted": {
+        "ug/ml": 1,
+        "мкг/мл": 1,
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 10,
+          "high": 20
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 25
+      },
+      "panel": "drug_monitoring"
+    },
+    "vancomycin": {
+      "ru": "Ванкомицин (остаточный)",
+      "en": "Vancomycin trough",
+      "names": [
+        "vancomycin",
+        "ванкомицин",
+        "ванкомицин trough"
+      ],
+      "canonical_unit": "ug/mL",
+      "units_accepted": {
+        "ug/ml": 1,
+        "мкг/мл": 1,
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 10,
+          "high": 20
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 30
+      },
+      "panel": "drug_monitoring",
+      "_note": "Остаточная концентрация (trough) перед дозой; цель зависит от AUC/MIC и показания."
+    },
+    "tacrolimus": {
+      "ru": "Такролимус",
+      "en": "Tacrolimus",
+      "names": [
+        "tacrolimus",
+        "такролимус",
+        "fk506",
+        "програф"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 5,
+          "high": 15
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 20
+      },
+      "panel": "drug_monitoring",
+      "_note": "Целевой диапазон зависит от органа и срока после трансплантации."
+    },
+    "cyclosporine": {
+      "ru": "Циклоспорин",
+      "en": "Cyclosporine",
+      "names": [
+        "cyclosporine",
+        "циклоспорин",
+        "сандиммун",
+        "csa"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 100,
+          "high": 400
+        }
+      },
+      "critical": null,
+      "panel": "drug_monitoring",
+      "_note": "Целевой уровень сильно зависит от протокола (C0/C2), органа и срока."
+    },
+    "methotrexate": {
+      "ru": "Метотрексат",
+      "en": "Methotrexate",
+      "names": [
+        "methotrexate",
+        "метотрексат",
+        "mtx"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 0.1
+        }
+      },
+      "critical": null,
+      "panel": "drug_monitoring",
+      "_note": "Мониторинг после высокодозной терапии для старта лейковорин-рескью; интерпретируй по времени от инфузии."
+    },
+    "paracetamol": {
+      "ru": "Парацетамол (ацетаминофен)",
+      "en": "Paracetamol",
+      "names": [
+        "paracetamol",
+        "acetaminophen",
+        "парацетамол",
+        "ацетаминофен"
+      ],
+      "canonical_unit": "ug/mL",
+      "units_accepted": {
+        "ug/ml": 1,
+        "мкг/мл": 1,
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 10,
+          "high": 20
+        }
+      },
+      "critical": null,
+      "panel": "toxicology",
+      "_note": "При передозировке оценивать по номограмме Румака-Мэтью (концентрация + часы от приёма), а не по «норме»."
+    },
+    "salicylate": {
+      "ru": "Салицилаты",
+      "en": "Salicylate",
+      "names": [
+        "salicylate",
+        "салицилаты",
+        "аспирин уровень",
+        "ацетилсалициловая кислота уровень"
+      ],
+      "canonical_unit": "mg/dL",
+      "units_accepted": {
+        "mg/dl": 1,
+        "мг/дл": 1,
+        "mg/l": 0.1,
+        "мг/л": 0.1
+      },
+      "ranges": {
+        "default": {
+          "low": 15,
+          "high": 30
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 50
+      },
+      "panel": "toxicology",
+      "_note": "Терапевт. 15–30; >50 мг/дл — токсичность (тиннитус, тахипноэ, смешанное КЩС-нарушение)."
+    },
+    "ethanol": {
+      "ru": "Этанол (алкоголь)",
+      "en": "Ethanol",
+      "names": [
+        "ethanol",
+        "этанол",
+        "алкоголь",
+        "alcohol",
+        "содержание алкоголя"
+      ],
+      "canonical_unit": "mg/dL",
+      "units_accepted": {
+        "mg/dl": 1,
+        "мг/дл": 1,
+        "g/l": 100,
+        "г/л": 100,
+        "promille": 100,
+        "‰": 100
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 0
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 300
+      },
+      "panel": "toxicology",
+      "_note": "80 мг/дл ≈ 0.8‰. Выраженное опьянение >150, угрожающее >300 мг/дл."
+    },
+    "carboxyhemoglobin": {
+      "ru": "Карбоксигемоглобин (COHb)",
+      "en": "Carboxyhemoglobin",
+      "names": [
+        "carboxyhemoglobin",
+        "cohb",
+        "карбоксигемоглобин"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 3
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 25
+      },
+      "panel": "toxicology",
+      "_note": "У курильщиков до ~10%. >25% — тяжёлое отравление угарным газом."
+    },
+    "methemoglobin": {
+      "ru": "Метгемоглобин (MetHb)",
+      "en": "Methemoglobin",
+      "names": [
+        "methemoglobin",
+        "methb",
+        "метгемоглобин"
+      ],
+      "canonical_unit": "%",
+      "units_accepted": {
+        "%": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 1.5
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 30
+      },
+      "panel": "toxicology",
+      "_note": ">30% — тяжёлая метгемоглобинемия (цианоз, гипоксия); лечение — метиленовый синий."
+    },
+    "ammonia": {
+      "ru": "Аммиак",
+      "en": "Ammonia",
+      "names": [
+        "ammonia",
+        "аммиак",
+        "nh3",
+        "amoniak"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "ug/dl": 0.5872,
+        "мкг/дл": 0.5872
+      },
+      "ranges": {
+        "default": {
+          "low": 11,
+          "high": 35
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 100
+      },
+      "panel": "toxicology",
+      "_note": "Повышение — печёночная энцефалопатия, нарушения цикла мочевины; забор на льду, быстрая доставка."
+    },
+    "osmolality_measured": {
+      "ru": "Осмолярность измеренная",
+      "en": "Measured osmolality",
+      "names": [
+        "осмолярность измеренная",
+        "осмоляльность",
+        "measured osmolality",
+        "осмолярность"
+      ],
+      "canonical_unit": "mOsm/kg",
+      "units_accepted": {
+        "mosm/kg": 1,
+        "мосм/кг": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 275,
+          "high": 295
+        }
+      },
+      "critical": null,
+      "panel": "toxicology",
+      "_note": "Осмолярный провал (измеренная − расчётная 2×Na+глюкоза+мочевина) >10 — осмотически активный токсин (этиленгликоль, метанол)."
+    },
+    "effusion_protein": {
+      "ru": "Белок пунктата",
+      "en": "Effusion protein",
+      "names": [
+        "effusion protein",
+        "белок пунктата",
+        "белок плевральной жидкости",
+        "белок выпота",
+        "белок асцита"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 30
+        }
+      },
+      "critical": null,
+      "panel": "effusion",
+      "_note": "Для критериев Лайта сравнивается с белком сыворотки (отношение >0.5 — экссудат)."
+    },
+    "effusion_ldh": {
+      "ru": "ЛДГ пунктата",
+      "en": "Effusion LDH",
+      "names": [
+        "effusion ldh",
+        "лдг пунктата",
+        "лдг плевральной жидкости",
+        "лдг выпота"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 200
+        }
+      },
+      "critical": null,
+      "panel": "effusion",
+      "_note": "Критерии Лайта: ЛДГ_выпот/ЛДГ_сыв >0.6 или >2/3 верхней нормы сыворотки — экссудат."
+    },
+    "effusion_albumin": {
+      "ru": "Альбумин пунктата",
+      "en": "Effusion albumin",
+      "names": [
+        "effusion albumin",
+        "альбумин пунктата",
+        "альбумин асцита",
+        "альбумин выпота"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 50
+        }
+      },
+      "critical": null,
+      "panel": "effusion",
+      "_note": "Для расчёта SAAG (альбумин сыворотки − альбумин асцита)."
+    },
+    "effusion_glucose": {
+      "ru": "Глюкоза пунктата",
+      "en": "Effusion glucose",
+      "names": [
+        "effusion glucose",
+        "глюкоза пунктата",
+        "глюкоза плевральной жидкости",
+        "глюкоза выпота"
+      ],
+      "canonical_unit": "mmol/L",
+      "units_accepted": {
+        "mmol/l": 1,
+        "ммоль/л": 1,
+        "mg/dl": 0.0555,
+        "мг/дл": 0.0555
+      },
+      "ranges": {
+        "default": {
+          "low": 3.3,
+          "high": 6.0
+        }
+      },
+      "critical": null,
+      "panel": "effusion",
+      "_note": "Низкая — эмпиема, туберкулёз, ревматоидный/злокачественный выпот."
+    },
+    "progesterone": {
+      "ru": "Прогестерон",
+      "en": "Progesterone",
+      "names": [
+        "progesterone",
+        "прогестерон",
+        "progesteron"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1,
+        "ng/ml": 3.18,
+        "нг/мл": 3.18
+      },
+      "ranges": {
+        "default": {
+          "low": 0.6,
+          "high": 4.7
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Сильно зависит от фазы цикла: лютеиновая >16 нмоль/л подтверждает овуляцию. Диапазон дан для фолликулярной фазы."
+    },
+    "dhea_s": {
+      "ru": "ДГЭА-сульфат",
+      "en": "DHEA-S",
+      "names": [
+        "dhea-s",
+        "dhea sulfate",
+        "дгэа-с",
+        "дгэа сульфат",
+        "дегидроэпиандростерон сульфат",
+        "dhea-so4",
+        "siarczan dehydroepiandrosteronu"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "ug/dl": 0.02714,
+        "мкг/дл": 0.02714
+      },
+      "ranges": {
+        "default": {
+          "low": 2.0,
+          "high": 10.0
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Маркёр надпочечниковых андрогенов; сильно зависит от возраста и пола. Резко повышен — опухоль надпочечника."
+    },
+    "17oh_progesterone": {
+      "ru": "17-ОН-прогестерон",
+      "en": "17-OH-progesterone",
+      "names": [
+        "17-oh-progesterone",
+        "17-ohp",
+        "17-он-прогестерон",
+        "17 он прогестерон",
+        "17opg",
+        "17-oh progesteron"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1,
+        "ng/ml": 3.03,
+        "нг/мл": 3.03
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 6.0
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Скрининг врождённой дисфункции коры надпочечников (дефицит 21-гидроксилазы); повышен в лютеиновую фазу."
+    },
+    "androstenedione": {
+      "ru": "Андростендион",
+      "en": "Androstenedione",
+      "names": [
+        "androstenedione",
+        "андростендион"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1,
+        "ng/ml": 3.49,
+        "нг/мл": 3.49
+      },
+      "ranges": {
+        "default": {
+          "low": 1.0,
+          "high": 11.5
+        }
+      },
+      "critical": null,
+      "panel": "hormones"
+    },
+    "amh": {
+      "ru": "Антимюллеров гормон (АМГ)",
+      "en": "AMH",
+      "names": [
+        "amh",
+        "амг",
+        "антимюллеров гормон",
+        "anti-mullerian hormone",
+        "hormon antymüllerowski"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "pmol/l": 0.14,
+        "пмоль/л": 0.14
+      },
+      "ranges": {
+        "default": {
+          "low": 1.0,
+          "high": 4.0
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Маркёр овариального резерва; низкий — снижение резерва, высокий — часто СПКЯ. У мужчин — функция клеток Сертоли."
+    },
+    "shbg": {
+      "ru": "ГСПГ (связывающий половые гормоны глобулин)",
+      "en": "SHBG",
+      "names": [
+        "shbg",
+        "гспг",
+        "глобулин связывающий половые гормоны",
+        "sex hormone binding globulin"
+      ],
+      "canonical_unit": "nmol/L",
+      "units_accepted": {
+        "nmol/l": 1,
+        "нмоль/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 18,
+          "high": 54
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Влияет на свободную фракцию тестостерона/эстрадиола; снижается при ожирении/ИР/гипотиреозе, растёт при эстрогенах/гипертиреозе."
+    },
+    "inhibin_b": {
+      "ru": "Ингибин B",
+      "en": "Inhibin B",
+      "names": [
+        "inhibin b",
+        "ингибин b",
+        "ингибин б"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 300
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Маркёр сперматогенеза/овариального резерва."
+    },
+    "homocysteine": {
+      "ru": "Гомоцистеин",
+      "en": "Homocysteine",
+      "names": [
+        "homocysteine",
+        "гомоцистеин",
+        "homocysteina"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "mg/l": 7.397,
+        "мг/л": 7.397
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 15
+        }
+      },
+      "critical": null,
+      "panel": "metabolites",
+      "_note": "Повышен при дефиците B12/B6/фолатов, ХБП; независимый фактор ССЗ/тромбозов."
+    },
+    "mma": {
+      "ru": "Метилмалоновая кислота (MMA)",
+      "en": "Methylmalonic acid",
+      "names": [
+        "mma",
+        "метилмалоновая кислота",
+        "methylmalonic acid"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1,
+        "nmol/l": 0.001
+      },
+      "ranges": {
+        "default": {
+          "low": 0.08,
+          "high": 0.28
+        }
+      },
+      "critical": null,
+      "panel": "metabolites",
+      "_note": "Повышена при дефиците B12 (чувствительнее самого B12); норма исключает клинически значимый дефицит."
+    },
+    "ceruloplasmin": {
+      "ru": "Церулоплазмин",
+      "en": "Ceruloplasmin",
+      "names": [
+        "ceruloplasmin",
+        "церулоплазмин",
+        "ceruloplazmina"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.2,
+          "high": 0.6
+        }
+      },
+      "critical": null,
+      "panel": "metabolites",
+      "_note": "Снижен при болезни Вильсона (с низкой медью сыворотки и высокой медью мочи); острофазовый — при воспалении растёт."
+    },
+    "a1_antitrypsin": {
+      "ru": "Альфа-1-антитрипсин",
+      "en": "Alpha-1-antitrypsin",
+      "names": [
+        "alpha-1-antitrypsin",
+        "a1at",
+        "альфа-1-антитрипсин",
+        "a1-антитрипсин",
+        "аат"
+      ],
+      "canonical_unit": "g/L",
+      "units_accepted": {
+        "g/l": 1,
+        "г/л": 1,
+        "mg/dl": 0.01,
+        "мг/дл": 0.01
+      },
+      "ranges": {
+        "default": {
+          "low": 0.9,
+          "high": 2.0
+        }
+      },
+      "critical": null,
+      "panel": "metabolites",
+      "_note": "Дефицит — ранняя эмфизема и поражение печени; острофазовый белок (при воспалении может маскировать дефицит)."
+    },
+    "ace": {
+      "ru": "АПФ (ангиотензинпревращающий фермент)",
+      "en": "ACE",
+      "names": [
+        "ace",
+        "апф",
+        "ангиотензинпревращающий фермент",
+        "angiotensin converting enzyme"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 8,
+          "high": 52
+        }
+      },
+      "critical": null,
+      "panel": "metabolites",
+      "_note": "Повышение ассоциировано с активностью саркоидоза (неспецифично)."
+    },
+    "b2_microglobulin": {
+      "ru": "Бета-2-микроглобулин",
+      "en": "Beta-2-microglobulin",
+      "names": [
+        "b2-microglobulin",
+        "beta-2-microglobulin",
+        "бета-2-микроглобулин",
+        "b2m",
+        "б2м"
+      ],
+      "canonical_unit": "mg/L",
+      "units_accepted": {
+        "mg/l": 1,
+        "мг/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.8,
+          "high": 2.4
+        }
+      },
+      "critical": null,
+      "panel": "metabolites",
+      "_note": "Маркёр опухолевой массы/прогноза при миеломе и лимфомах; растёт при ХБП."
+    },
+    "free_hemoglobin": {
+      "ru": "Свободный гемоглобин плазмы",
+      "en": "Free hemoglobin",
+      "names": [
+        "free hemoglobin",
+        "свободный гемоглобин",
+        "свободный гемоглобин плазмы",
+        "плазменный гемоглобин"
+      ],
+      "canonical_unit": "mg/L",
+      "units_accepted": {
+        "mg/l": 1,
+        "мг/л": 1,
+        "mg/dl": 10,
+        "мг/дл": 10
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 50
+        }
+      },
+      "critical": null,
+      "panel": "metabolites",
+      "_note": "Повышен при внутрисосудистом гемолизе (сопоставь с гаптоглобином, ЛДГ, непрямым билирубином)."
+    },
+    "ck": {
+      "ru": "КФК (креатинкиназа общая)",
+      "en": "CK",
+      "names": [
+        "ck",
+        "cpk",
+        "кфк",
+        "креатинкиназа",
+        "creatine kinase",
+        "kinaza kreatynowa"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 39,
+          "high": 308
+        },
+        "female": {
+          "low": 26,
+          "high": 192
+        },
+        "default": {
+          "low": 26,
+          "high": 308
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 5000
+      },
+      "panel": "cardiac",
+      "_note": "Резкое повышение — рабдомиолиз (риск ОПП), миопатия; умеренное — после нагрузки/инъекций/статинов."
+    },
+    "ck_mb": {
+      "ru": "КФК-МВ",
+      "en": "CK-MB",
+      "names": [
+        "ck-mb",
+        "ckmb",
+        "кфк-мв",
+        "кфк-мб",
+        "creatine kinase mb"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 24
+        }
+      },
+      "critical": null,
+      "panel": "cardiac",
+      "_note": "Миокардиальная фракция; оценивай долю от общей КФК (индекс >5% — в пользу поражения миокарда). Тропонин специфичнее."
+    },
+    "myoglobin": {
+      "ru": "Миоглобин",
+      "en": "Myoglobin",
+      "names": [
+        "myoglobin",
+        "миоглобин"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 0,
+          "high": 72
+        },
+        "female": {
+          "low": 0,
+          "high": 58
+        },
+        "default": {
+          "low": 0,
+          "high": 72
+        }
+      },
+      "critical": null,
+      "panel": "cardiac",
+      "_note": "Ранний, но неспецифичный маркёр (мышцы+миокард); растёт и при рабдомиолизе."
+    },
+    "copeptin": {
+      "ru": "Копептин",
+      "en": "Copeptin",
+      "names": [
+        "copeptin",
+        "копептин"
+      ],
+      "canonical_unit": "pmol/L",
+      "units_accepted": {
+        "pmol/l": 1,
+        "пмоль/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 10
+        }
+      },
+      "critical": null,
+      "panel": "cardiac",
+      "_note": "С тропонином — ранняя rule-out стратегия ОИМ; также маркёр вазопрессиновой оси (дифдиагноз полиурии)."
+    },
+    "presepsin": {
+      "ru": "Пресепсин",
+      "en": "Presepsin",
+      "names": [
+        "presepsin",
+        "пресепсин",
+        "scd14-st"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 320
+        }
+      },
+      "critical": {
+        "low": null,
+        "high": 1000
+      },
+      "panel": "inflammation",
+      "_note": "Ранний маркёр бактериального сепсиса; растёт раньше ПКТ."
+    },
+    "il_6": {
+      "ru": "Интерлейкин-6 (IL-6)",
+      "en": "IL-6",
+      "names": [
+        "il-6",
+        "il6",
+        "интерлейкин-6",
+        "интерлейкин 6"
+      ],
+      "canonical_unit": "pg/mL",
+      "units_accepted": {
+        "pg/ml": 1,
+        "пг/мл": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 7
+        }
+      },
+      "critical": null,
+      "panel": "inflammation",
+      "_note": "Ранний провоспалительный цитокин; высокий при сепсисе/цитокиновом шторме, неспецифичен."
+    },
+    "bile_acids": {
+      "ru": "Желчные кислоты",
+      "en": "Bile acids",
+      "names": [
+        "bile acids",
+        "желчные кислоты",
+        "жк",
+        "total bile acids"
+      ],
+      "canonical_unit": "umol/L",
+      "units_accepted": {
+        "umol/l": 1,
+        "мкмоль/л": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0,
+          "high": 10
+        }
+      },
+      "critical": null,
+      "panel": "liver",
+      "_note": "Повышение — холестаз; при беременности >10 натощак — холестаз беременных (риск для плода)."
+    },
+    "cholinesterase": {
+      "ru": "Холинэстераза (псевдо-ХЭ)",
+      "en": "Cholinesterase",
+      "names": [
+        "cholinesterase",
+        "холинэстераза",
+        "псевдохолинэстераза",
+        "бутирилхолинэстераза",
+        "che"
+      ],
+      "canonical_unit": "U/L",
+      "units_accepted": {
+        "u/l": 1,
+        "ед/л": 1,
+        "iu/l": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 5300,
+          "high": 12900
+        }
+      },
+      "critical": null,
+      "panel": "liver",
+      "_note": "Снижение — тяжёлая печёночная недостаточность, отравление ФОС/карбаматами, атипичный фермент (дифференцируй)."
+    },
+    "leptin": {
+      "ru": "Лептин",
+      "en": "Leptin",
+      "names": [
+        "leptin",
+        "лептин",
+        "leptyna"
+      ],
+      "canonical_unit": "ng/mL",
+      "units_accepted": {
+        "ng/ml": 1,
+        "нг/мл": 1,
+        "ug/l": 1,
+        "мкг/л": 1
+      },
+      "ranges": {
+        "male": {
+          "low": 1.0,
+          "high": 6.0
+        },
+        "female": {
+          "low": 3.0,
+          "high": 15.0
+        },
+        "default": {
+          "low": 1.0,
+          "high": 15.0
+        }
+      },
+      "critical": null,
+      "panel": "hormones",
+      "_note": "Сильно зависит от % жировой массы и пола; растёт при ожирении, падает при голодании. Интерпретируй с ИМТ."
+    },
+    "chlamydia_igg": {
+      "ru": "Chlamydia trachomatis IgG",
+      "en": "Chlamydia trachomatis IgG",
+      "names": [
+        "chlamydia trachomatis igg",
+        "хламидия igg",
+        "chlamydia igg"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Перенесённый/текущий контакт с Chlamydia trachomatis; трактовать с IgA/IgM и клиникой."
+      ],
+      "pos_cutoff": 16.0,
+      "borderline_low": 11.0
+    },
+    "chlamydia_iga": {
+      "ru": "Chlamydia trachomatis IgA",
+      "en": "Chlamydia trachomatis IgA",
+      "names": [
+        "chlamydia trachomatis iga",
+        "ch. trachomatis kl. iga",
+        "хламидия iga",
+        "chlamydia iga"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Маркёр активной/недавней хламидийной инфекции."
+      ],
+      "pos_cutoff": 1.1,
+      "borderline_low": 0.8
+    },
+    "hsv_igg": {
+      "ru": "HSV-1/2 IgG",
+      "en": "HSV-1/2 IgG",
+      "names": [
+        "herpes simplex virus igg",
+        "hsv igg",
+        "hsv-1/2 igg",
+        "вирус простого герпеса igg"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Положительный IgG — перенесённая/латентная герпес-инфекция (очень распространено), не острая."
+      ],
+      "pos_cutoff": 2.0
+    },
+    "hsv_igm": {
+      "ru": "HSV-1/2 IgM",
+      "en": "HSV-1/2 IgM",
+      "names": [
+        "herpes simplex virus igm",
+        "hsv igm",
+        "hsv-1/2 igm",
+        "вирус простого герпеса igm"
+      ],
+      "qualitative": true,
+      "panel": "serology",
+      "notes": [
+        "Положительный IgM — острая/недавняя инфекция или реактивация."
+      ],
+      "pos_cutoff": 2.0
+    },
+    "monocytes_abs": {
+      "ru": "Моноциты абс.",
+      "en": "Monocytes abs",
+      "names": [
+        "monocytes abs",
+        "моноциты абс",
+        "monocyty абс",
+        "monocyty bezwzględne"
+      ],
+      "canonical_unit": "10^9/L",
+      "units_accepted": {
+        "10^9/l": 1,
+        "10^3/ul": 1,
+        "тыс/мкл": 1,
+        "tys/ul": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.2,
+          "high": 1.0
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "eosinophils_abs": {
+      "ru": "Эозинофилы абс.",
+      "en": "Eosinophils abs",
+      "names": [
+        "eosinophils abs",
+        "эозинофилы абс",
+        "eozynofile абс",
+        "eozynofile bezwzględne"
+      ],
+      "canonical_unit": "10^9/L",
+      "units_accepted": {
+        "10^9/l": 1,
+        "10^3/ul": 1,
+        "тыс/мкл": 1,
+        "tys/ul": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.02,
+          "high": 0.5
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    },
+    "basophils_abs": {
+      "ru": "Базофилы абс.",
+      "en": "Basophils abs",
+      "names": [
+        "basophils abs",
+        "базофилы абс",
+        "bazofile абс",
+        "bazofile bezwzględne"
+      ],
+      "canonical_unit": "10^9/L",
+      "units_accepted": {
+        "10^9/l": 1,
+        "10^3/ul": 1,
+        "тыс/мкл": 1,
+        "tys/ul": 1
+      },
+      "ranges": {
+        "default": {
+          "low": 0.01,
+          "high": 0.1
+        }
+      },
+      "critical": null,
+      "panel": "cbc"
+    }
+  }
+}
